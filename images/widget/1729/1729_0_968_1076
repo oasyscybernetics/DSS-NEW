@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=968" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <style type="text/css">.image img { width:100%;}.cycle-overlay {color: white;background: black;opacity: .6;filter: alpha(opacity=60);position: absolute;bottom: 0;width: 100%;padding: 15px;text-align:center;}</style><link href="/library/fontcss" rel="stylesheet" media="screen"><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="/library/download/3?preview=1"></script><script type="text/javascript" src="/library/download/8?preview=1"></script><script type="text/javascript" src="/library/download/5?preview=1"></script><script type="text/javascript" src="/library/download/6?preview=1"></script><script type="text/javascript" src="/library/download/12?preview=1"></script><script type="text/javascript">   var options = {"type":"ticker","fx":"shuffle","duration":5,"durationIsPerItem":false,"numItems":10,"takeItemsFrom":"start","reverseOrder":0,"itemsPerPage":0,"randomiseItems":0,"speed":2,"originalWidth":"968","originalHeight":"1076"};   var items = ["<div class=\"image\"><img src=\"\/library\/download\/724\/image?preview=1\"\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Video | Audio: Trump zet partijgenoot onder druk voor extra stemmen<\/p><\/div><\/div>","<div class=\"image\"><img src=\"\/library\/download\/725\/image?preview=1\"\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Liveblog corona | 'Duitsland verlengt lockdown tot 31 januari'<\/p><\/div><\/div>","<div class=\"image\"><img src=\"\/library\/download\/714\/image?preview=1\"\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Rechter: Assange zal niet worden uitgeleverd aan VS<\/p><\/div><\/div>","<div class=\"image\"><img src=\"\/library\/download\/715\/image?preview=1\"\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">GGD: In eerste paar uren 'duizenden afspraken' voor coronavaccin gemaakt<\/p><\/div><\/div>","<div class=\"image\"><img src=\"\/library\/download\/716\/image?preview=1\"\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Schiphol zag zeven op de tien reizigers verdwijnen in 2020<\/p><\/div><\/div>","<div class=\"image\"><img src=\"\/library\/download\/717\/image?preview=1\"\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Eerste Brit inge\u00ebnt met vaccin van AstraZeneca en Oxford University<\/p><\/div><\/div>","<div class=\"image\"><img src=\"\/library\/download\/718\/image?preview=1\"\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Bevolking Zuid-Korea voor het eerst in historie verkleind door vergrijzing<\/p><\/div><\/div>","<div class=\"image\"><img src=\"\/library\/download\/719\/image?preview=1\"\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">15.000 UWV-medewerkers kunnen bij miljoenen gegevens van oud-klanten<\/p><\/div><\/div>","<div class=\"image\"><img src=\"\/library\/download\/720\/image?preview=1\"\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Poolse supermarkt in Tilburg vanbinnen volledig verwoest door explosie<\/p><\/div><\/div>","<div class=\"image\"><img src=\"\/library\/download\/721\/image?preview=1\"\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Aantal autobranden flink gestegen, vooral in Limburg en Zuid-Holland<\/p><\/div><\/div>","<span id=\"copyright\">https:\/\/www.ed.gov<\/span>"];   $(document).ready(function() {        $("body").xiboLayoutScaler(options); if(items != false) { $("#content").xiboTextRender(options, items); } $("#content").find("img").xiboImageRender(options);    }); </script>
+</html>
+<!-- NUMITEMS=10 -->
+<!-- DURATION=5 -->

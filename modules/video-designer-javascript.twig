@@ -1,0 +1,33 @@
+{#
+/*
+ * Spring Signage Ltd - http://www.springsignage.com
+ * Copyright (C) 2017 Spring Signage Ltd
+ * (notification-designer-javascript.twig)
+ */
+#}
+<script type="text/javascript">
+
+    // Runs after form opens
+    function video_form_edit_open() {
+
+        let form = $(this).find('form');
+        // Set command code field, using the helper ()
+        formHelpers.setupConditionalInputFields(
+            form.find('#duration, #useDuration'), //triggerFields
+            form.find('.loop-fields'), //targetFields
+            form.data('mediaDuration'), //compareValue
+            (compare) => {
+                const valueComparison = parseFloat(form.find('#duration').val()) > parseFloat(compare);
+                const useDurationIsChecked = form.find('#useDuration').is(':checked');
+                return valueComparison && useDurationIsChecked;
+            } //conditionTest
+        );
+
+        // Set duration field, using the helper ()
+        formHelpers.setupCheckboxInputFields(form, '#useDuration', '.duration-fields');
+
+
+        formHelpers.mediaEditFormOpen(this);
+    }
+
+</script>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=914" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <link href="/library/fontcss" rel="stylesheet" media="screen"><style type="text/css"></style><style type="text/css">table.DataSetTable {
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;  
+width:100%;
+border-collapse:collapse;
+}
+
+tr.HeaderRow {
+font-size:1.1em;
+text-align:center;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#ffffff;
+}
+
+tr#row_1 {
+color:#000000;
+background-color:#EAF2D3;
+}
+
+td#col_1 {
+color:#000000;
+background-color:#EAF2D3;
+}
+
+td.DataSetColumn {
+color:#000000;
+background-color:#EAF2D3;
+border:1px solid #98bf21
+}
+
+tr.DataSetRow {
+text-align:center;
+color:#000000;
+background-color:#EAF2D3;
+border:1px solid #98bf21
+padding-top:5px;
+padding-bottom:4px;
+}
+
+th.DataSetColumnHeaderCell {
+font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;
+}
+
+span#1_1 {
+
+}
+
+span.DataSetColumnSpan {
+
+}table.DataSetTable.cycle-slide { display: table !important; }</style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"><div id="DataSetTableContainer" totalRows="18" totalPages="1"><table class="DataSetTable"><thead> <tr class="HeaderRow"><th class="DataSetColumnHeaderCell">Day</th><th class="DataSetColumnHeaderCell">Session</th><th class="DataSetColumnHeaderCell">Count of Members</th> </tr></thead><tbody><tr class="DataSetRow DataSetRowOdd" id="row_1"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_1_1" id="span_1_2">Monday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_1_2" id="span_1_3">Morning</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_1_3" id="span_1_4">30</span></td></tr><tr class="DataSetRow DataSetRowEven" id="row_2"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_2_1" id="span_2_2">Monday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_2_2" id="span_2_3">Afternoon</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_2_3" id="span_2_4">25</span></td></tr><tr class="DataSetRow DataSetRowOdd" id="row_3"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_3_1" id="span_3_2">Monday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_3_2" id="span_3_3">Evening</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_3_3" id="span_3_4">45</span></td></tr><tr class="DataSetRow DataSetRowEven" id="row_4"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_4_1" id="span_4_2">Tuesday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_4_2" id="span_4_3">Morning</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_4_3" id="span_4_4">24</span></td></tr><tr class="DataSetRow DataSetRowOdd" id="row_5"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_5_1" id="span_5_2">Tuesday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_5_2" id="span_5_3">Afternoon</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_5_3" id="span_5_4">15</span></td></tr><tr class="DataSetRow DataSetRowEven" id="row_6"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_6_1" id="span_6_2">Tuesday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_6_2" id="span_6_3">Evening</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_6_3" id="span_6_4">35</span></td></tr><tr class="DataSetRow DataSetRowOdd" id="row_7"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_7_1" id="span_7_2">Wednesday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_7_2" id="span_7_3">Morning</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_7_3" id="span_7_4">30</span></td></tr><tr class="DataSetRow DataSetRowEven" id="row_8"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_8_1" id="span_8_2">Wednesday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_8_2" id="span_8_3">Afternoon</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_8_3" id="span_8_4">15</span></td></tr><tr class="DataSetRow DataSetRowOdd" id="row_9"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_9_1" id="span_9_2">Wednesday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_9_2" id="span_9_3">Evening</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_9_3" id="span_9_4">35</span></td></tr><tr class="DataSetRow DataSetRowEven" id="row_10"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_10_1" id="span_10_2">Thursday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_10_2" id="span_10_3">Morning</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_10_3" id="span_10_4">20</span></td></tr><tr class="DataSetRow DataSetRowOdd" id="row_11"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_11_1" id="span_11_2">Thursday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_11_2" id="span_11_3">Afternoon</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_11_3" id="span_11_4">12</span></td></tr><tr class="DataSetRow DataSetRowEven" id="row_12"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_12_1" id="span_12_2">Thursday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_12_2" id="span_12_3">Evening</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_12_3" id="span_12_4">24</span></td></tr><tr class="DataSetRow DataSetRowOdd" id="row_13"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_13_1" id="span_13_2">Saturday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_13_2" id="span_13_3">Morning</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_13_3" id="span_13_4">14</span></td></tr><tr class="DataSetRow DataSetRowEven" id="row_14"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_14_1" id="span_14_2">Saturday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_14_2" id="span_14_3">Afternoon</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_14_3" id="span_14_4">7</span></td></tr><tr class="DataSetRow DataSetRowOdd" id="row_15"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_15_1" id="span_15_2">Saturday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_15_2" id="span_15_3">Evening</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_15_3" id="span_15_4">24</span></td></tr><tr class="DataSetRow DataSetRowEven" id="row_16"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_16_1" id="span_16_2">Sunday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_16_2" id="span_16_3">Morning</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_16_3" id="span_16_4">25</span></td></tr><tr class="DataSetRow DataSetRowOdd" id="row_17"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_17_1" id="span_17_2">Sunday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_17_2" id="span_17_3">Afternoon</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_17_3" id="span_17_4">24</span></td></tr><tr class="DataSetRow DataSetRowEven" id="row_18"><td class="DataSetColumn DataSetColumn_1" id="column_2"><span class="DataSetCellSpan DataSetCellSpan_18_1" id="span_18_2">Sunday</span></td><td class="DataSetColumn DataSetColumn_2" id="column_3"><span class="DataSetCellSpan DataSetCellSpan_18_2" id="span_18_3">Evening</span></td><td class="DataSetColumn DataSetColumn_3" id="column_4"><span class="DataSetCellSpan DataSetCellSpan_18_3" id="span_18_4">35</span></td></tr></tbody></table></div></div>
+</body>
+<script type="text/javascript" src="/library/download/3?preview=1"></script><script type="text/javascript" src="/library/download/8?preview=1"></script><script type="text/javascript" src="/library/download/5?preview=1"></script><script type="text/javascript" src="/library/download/13?preview=1"></script><script type="text/javascript" src="/library/download/12?preview=1"></script><script type="text/javascript">   var options = {"type":"datasetview","duration":60,"originalWidth":"914","originalHeight":"611","rowsPerPage":0,"durationIsPerItem":false};   $(document).ready(function() {        $("#DataSetTableContainer").dataSetRender(options); $("body").xiboLayoutScaler(options); $("#DataSetTableContainer").find("img").xiboImageRender(options);    }); </script>
+</html>
+<!-- NUMITEMS=1 -->
+<!-- DURATION=60 -->

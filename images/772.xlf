@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<layout width="1920" height="1080" bgcolor="#000" schemaVersion="3" enableStat="1"><region id="1429" width="1920" height="1080" top="0" left="0"><options/></region><region id="1430" width="1870" height="1030" top="50" left="50"><options><loop>0</loop><transitionDirection>N</transitionDirection><transitionDuration/><transitionType/></options></region><tags/></layout>

@@ -1,0 +1,1 @@
+$.fn.modal.Constructor.prototype.enforceFocus=function(){modal_this=this,$(document).on("focusin.modal",(function(t){modal_this.$element[0]===t.target||modal_this.$element.has(t.target).length||$(t.target.parentNode).hasClass("cke")||$(t.target.parentNode).hasClass("cke_dialog_ui_input_text")||modal_this.$element.focus()}))};

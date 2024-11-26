@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[[ViewPortWidth]]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <style type="text/css"> .item, .page { float: left; }</style><link href="fonts.css" rel="stylesheet" media="screen"><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script><script type="text/javascript" src="jquery-cycle-2.1.6.min.js"></script><script type="text/javascript" src="xibo-layout-scaler.js"></script><script type="text/javascript" src="xibo-text-render.js"></script><script type="text/javascript" src="xibo-image-render.js"></script><script type="text/javascript">   var options = {"type":"ticker","fx":"tileBlind","duration":40,"durationIsPerItem":false,"numItems":10,"takeItemsFrom":"end","reverseOrder":1,"itemsPerPage":0,"randomiseItems":0,"speed":2,"originalWidth":"1920","originalHeight":"1080"};   var items = ["<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>'Goede kans' op elfstedentochtijs volgende week (maar nee, it giet net oan)<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Adopties uit buitenland opgeschort om misstanden, lopende zaken afgerond<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>PostNL en DHL bezorgen wel, maar niet alles<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Commissie-Joustra: Kabinet moet ook kritisch kijken naar draagmoederschap<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Code oranje in Noord-Holland, Friesland en Groningen wegens gladheid<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Video | Natuurijsbaan in Doorn geopend, maar alleen voor kinderen<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Marathonschaatsers schrijven open brief aan KNSB: 'Natuurijs breekt wet'<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Zuid-Afrika schort toedienen AstraZeneca-vaccin op na tegenvallend onderzoek<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Sommige coronatestlocaties nog altijd dicht vanwege winters weer<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>'Politie zet waterkanon in tegen anticoupdemonstranten in Myanmar'<\/strong><\/span><\/span><\/p>","<span id=\"copyright\">https:\/\/www.ed.gov<\/span>"];   $(document).ready(function() {        $("body").xiboLayoutScaler(options); if(items != false) { $("#content").xiboTextRender(options, items); } $("#content").find("img").xiboImageRender(options);    }); </script>
+</html>
+<!-- NUMITEMS=10 -->
+<!-- DURATION=40 -->

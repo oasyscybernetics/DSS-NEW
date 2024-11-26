@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[[ViewPortWidth]]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <style type="text/css">.image img { width:100%;}.cycle-overlay {color: white;background: black;opacity: .6;filter: alpha(opacity=60);position: absolute;bottom: 0;width: 100%;padding: 15px;text-align:center;}</style><link href="fonts.css" rel="stylesheet" media="screen"><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script><script type="text/javascript" src="xibo-layout-scaler.js"></script><script type="text/javascript" src="xibo-text-render.js"></script><script type="text/javascript" src="xibo-image-render.js"></script><script type="text/javascript">   var options = {"type":"ticker","fx":"none","duration":30,"durationIsPerItem":true,"numItems":10,"takeItemsFrom":"start","reverseOrder":0,"itemsPerPage":0,"randomiseItems":0,"speed":2,"originalWidth":"1920","originalHeight":"1080"};   var items = ["<div class=\"image\"><img src=\"ticker_ed92871d7fc033cadcd591dfc21ba45d\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">RIVM meldt 5.935 nieuwe positieve tests, fors meer dan gemiddeld (5.017)<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_5ec8f2a94c5c51b58bce3055dbf4b315\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">EU-president Charles Michel waarschuwt Turkije voor mogelijke sancties<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_c9cf3b9c39610a2a407f503b95f690cd\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Podcast | Ethische dilemma's maken nieuws over bedreigde OMT-leden lastig<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_d279923a008fd02638a3f1b0efbe1777\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Wandelaar vindt onderkaak van voor Christus op strand Noordwijk<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_8efb1c40d9dd8dcd269160969bc04e10\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Imam Yassin El Forkani vertrekt mede door bedreigingen bij Blauwe Moskee<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_e659291f6d42bca37518954fc1d6709f\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Video | Italiaanse brandweer vliegt met heilig beeld over stad tijdens feestdag<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_1c9daf6b7392977c30178f1d49be3480\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Hoofdverdachte over martelcontainers: 'Ge\u00efsoleerd, ze mogen schreeuwen'<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_725f70f0e491339c42772f7e944d4138\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Afschieten wilde zwijnen op Veluwe gaat moeizaam door drukte in bossen<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_1c87b9a74807a6a2e4616340a87dbe72\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Oud-fractieleider FVD Overijssel stapt naar rechter om partijreferendum<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_d58a40f49147d2cae4c7a26fa9c40a21\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Binnenhof reageert geschokt op bedreiging van OMT-leden<\/p><\/div><\/div>","<span id=\"copyright\">https:\/\/xibo.org.uk\/<\/span>"];   $(document).ready(function() {        $("body").xiboLayoutScaler(options); if(items != false) { $("#content").xiboTextRender(options, items); } $("#content").find("img").xiboImageRender(options);    }); </script>
+</html>
+<!-- NUMITEMS=10 -->
+<!-- DURATION=300 -->

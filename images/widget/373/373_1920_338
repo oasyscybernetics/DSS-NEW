@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[[ViewPortWidth]]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <link href="fonts.css" rel="stylesheet" media="screen"><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script><script type="text/javascript" src="jquery.marquee.min.js"></script><script type="text/javascript" src="jquery-cycle-2.1.6.min.js"></script><script type="text/javascript" src="xibo-layout-scaler.js"></script><script type="text/javascript" src="xibo-text-render.js"></script><script type="text/javascript" src="xibo-image-render.js"></script><script type="text/javascript">   var options = {"type":"ticker","fx":"marqueeLeft","duration":120,"durationIsPerItem":false,"numItems":16,"takeItemsFrom":"start","reverseOrder":0,"itemsPerPage":0,"randomiseItems":0,"speed":10,"originalWidth":"1920","originalHeight":"338"};   var items = ["<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Secretary DeVos Opens Nominations for Second Annual Presidential Cybersecurity Education Award<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Secretary DeVos Releases Statement on The Nation's Report Card Results for 12th Graders<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>U.S. Department of Education Releases Parent and Family Digital Learning Guide<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>U.S. Department of Education Announces Additional Funding For Earn-and-Learn Opportunities to Prepare Postsecondary Students for Career Success<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>U.S. Department of Education Uncovers Vast Underreporting of Foreign Gifts and Contracts by Higher Education Institutions<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Prepared Remarks by Secretary DeVos at Hillsdale College<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>10 Principals Named Recipients of 2020 Terrel H. Bell Award for Outstanding School Leadership<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>U.S. Department of Education Releases 2017-18 Civil Rights Data Collection<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>U.S. Education Secretary Appoints Five Members to Board Overseeing The Nation\u2019s Report Card<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Readout of the White House Conference Call with African American Leaders on School Choice Now with U.S. Education Secretary Betsy DeVos and Senator Tim Scott<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Secretary DeVos Announces More than $131 Million in New Funding to Create and Expand High-Quality Public Charter Schools<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Department Launches 2021-22 FAFSA Cycle<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Secretary DeVos Announces $24 Million In Grants to Expand Education Choice for Native American Students<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Secretary DeVos Expands Commitment to Elevating the Teaching Profession through New Grant Funding for Performance-Based Compensation, Professional Development<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Secretary DeVos Announces Student-Centered Grant Awards to Spur Worker Development, Entrepreneurship, and Economic Growth During Coronavirus Recovery<\/strong><\/span><\/span><\/p>","<span id=\"copyright\">https:\/\/www.ed.gov<\/span>"];   $(document).ready(function() {        $("body").xiboLayoutScaler(options); if(items != false) { $("#content").xiboTextRender(options, items); } $("#content").find("img").xiboImageRender(options);    }); </script>
+</html>
+<!-- NUMITEMS=16 -->
+<!-- DURATION=120 -->

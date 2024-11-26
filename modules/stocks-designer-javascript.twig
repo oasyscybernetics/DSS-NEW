@@ -1,0 +1,51 @@
+{#
+/*
+ * Spring Signage Ltd - http://www.springsignage.com
+ * Copyright (C) 2017 Spring Signage Ltd
+ * (notification-designer-javascript.twig)
+ */
+#}
+<script type="text/javascript">
+
+    // Runs after form opens
+    function stocks_form_edit_open() {
+        
+        // Set duration field, using the helper ()
+        formHelpers.setupCheckboxInputFields($(this).find('form'), '#useDuration', '.duration-fields');
+
+        // Set override template field, using the helper ()
+        formHelpers.setupCheckboxInputFields($(this), '#overrideTemplate', '.template-override-controls', '.template-selector-control');
+
+        // Set effect type input field, using the helper ()
+        formHelpers.setupObjectValueInputFields($(this).find('form'), '#effect', ['.effect-controls'], ['none'], true);
+
+        // Setup editors
+        formHelpers.setupDualTypeTextArea(this, 'mainTemplate');
+        formHelpers.setupDualTypeTextArea(this, 'itemTemplate');
+        
+        // Setup template override
+        formHelpers.setupTemplateOverriding(this, '#overrideTemplate', '#templateId', 
+            {
+                '#mainTemplate': 'main',
+                '#itemTemplate': 'item',
+                '#styleSheet': 'css',
+                '#widgetOriginalWidth': 'widgetOriginalWidth',
+                '#widgetOriginalHeight': 'widgetOriginalHeight',
+                '#maxItemsPerPage': 'maxItemsPerPage'
+            });
+
+        // Setup background color picker
+        $(this).find('#backgroundColor').colorpicker({format: 'rgba'});
+
+        // Tidy up colorpickers on modal close
+        if($(this).hasClass('modal')) {
+            $(this).on("hide.bs.modal", function(e) {
+                if(e.namespace === 'bs.modal') {
+                    // Remove colour pickers
+                    $(this).find("#backgroundColor").colorpicker('destroy');
+                }
+            });
+        }
+    }
+
+</script>

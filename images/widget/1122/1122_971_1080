@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[[ViewPortWidth]]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <style type="text/css"> .item, .page { float: left; }</style><style type="text/css">.image img { width:100%;}.cycle-overlay {color: white;background: black;opacity: .6;filter: alpha(opacity=60);position: absolute;bottom: 0;width: 100%;padding: 15px;text-align:center;}</style><link href="fonts.css" rel="stylesheet" media="screen"><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script><script type="text/javascript" src="jquery-cycle-2.1.6.min.js"></script><script type="text/javascript" src="xibo-layout-scaler.js"></script><script type="text/javascript" src="xibo-text-render.js"></script><script type="text/javascript" src="xibo-image-render.js"></script><script type="text/javascript">   var options = {"type":"ticker","fx":"shuffle","duration":5,"durationIsPerItem":false,"numItems":10,"takeItemsFrom":"end","reverseOrder":0,"itemsPerPage":0,"randomiseItems":0,"speed":2,"originalWidth":"971","originalHeight":"1080"};   var items = ["<div class=\"image\"><img src=\"ticker_51c8eebf17814d5700f4b0783a718c27\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Liveblog corona | De Jonge: 'Mogelijk sprake van Black Friday-effect'<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_086bb9e909a75f168c1dce5654f249b9\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">RIVM meldt 8.894 positieve tests, voor tiende dag op rij meer dan gemiddeld (6.861)<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_4e9df737608948cfb067e56243b049a5\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Video | Bezorgde kijkers waarschuwen verslaggever in VS voor tumor<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_e058d3017cb3f1e01c6d62dffe5cac6c\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Huis van de markt gehaald na bevestiging dat werk op muur van Banksy is<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_7bb2c56ec91c5f2aac9652998be5d338\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Zeker 272 dode zeehonden aangetroffen op voornamelijk Russische stranden<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_e5d8a711e4adb15a8c54878315d15fcb\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Politie houdt rekening met rellen tijdens jaarwisseling en verdubbelt aantal agenten<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_780733bdf2cdb2010669a152ef73f31c\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Weekendweerbericht: Grijs met afwisselend regen en een beetje zon<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_7a1e3dbc9cd291c60880abd58b68bc5d\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Eerste fatale aanval van een haai in recente geschiedenis van Sint-Maarten<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_f4b6e7edff244af0957384ae3b4c3abe\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">CDA-bestuur vanmiddag bijeen, Hoekstra sluit leiderschap niet uit<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_9419d9be08798ca0481afda48d1f9a04\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Europa schroeft klimaatdoelen op: 55 procent minder CO2-uitstoot in 2030<\/p><\/div><\/div>","<span id=\"copyright\">https:\/\/www.ed.gov<\/span>"];   $(document).ready(function() {        $("body").xiboLayoutScaler(options); if(items != false) { $("#content").xiboTextRender(options, items); } $("#content").find("img").xiboImageRender(options);    }); </script>
+</html>
+<!-- NUMITEMS=10 -->
+<!-- DURATION=5 -->

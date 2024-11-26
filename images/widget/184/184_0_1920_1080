@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1920" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <link href = "/library/fontcss" rel="stylesheet" media="screen"><style type = "text/css" > </style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"><span style="font-size: 48px; color:#ffffff;"><span class="clock" format="HH:mm"></span></span></div>
+</body>
+<script type="text/javascript" src="/library/download/3?preview=1"></script><script type="text/javascript" src="/library/download/4?preview=1"></script><script type="text/javascript" src="/library/download/5?preview=1"></script><script type="text/javascript">
+                    var locale = "en-GB";
+                    var options = {"originalWidth":"1920","originalHeight":"1080","previewWidth":212,"previewHeight":119};
+
+                    function updateClock() {
+                        $(".clock").each(function() {
+                            $(this).html(moment().add(0, "m").format($(this).attr("format")));
+                        });
+                    }
+
+                    $(document).ready(function() {
+                                        moment.locale(locale);
+                        updateClock();
+                        setInterval(updateClock, 1000);
+                        $("body").xiboLayoutScaler(options);
+                    });
+                </script>
+</html>
+

@@ -1,0 +1,501 @@
+{# 
+    Common files ( translations and other common variables )
+        Add by including in another twig file javaScript block: {% include "common.twig" %}
+#}
+{% block javaScript %} 
+    <script type="text/javascript">
+
+        // COMMON VARIABLES
+        const serverMode = "{{ settings.SERVER_MODE }}";
+        let playlistRegionColouring =  "{{ settings.REGION_OPTIONS_COLOURING }}";
+        let libraryUpload = {{ libraryUpload|json_encode|raw }};
+        var librarySearchUrl = "{{ urlFor("library.search") }}";
+        var libraryAddUrl = "{{ urlFor("library.add") }}";
+        var imageDownloadUrl = "{{ urlFor("library.download") }}?preview=1";
+        var uploadFormUpdateAllDefault = {% if settings.LIBRARY_MEDIA_UPDATEINALL_CHECKB == 1 %}true{% else %}false{% endif %};
+        var uploadFormDeleteOldDefault = {% if settings.LIBRARY_MEDIA_DELETEOLDVER_CHECKB == 1 %}true{% else %}false{% endif %};
+        var tooltipDelay = {'show': 250, 'hide': 0};
+        var playlistEditorUrl = "{{ urlFor("playlist.timeline.form") }}";
+        
+        // Save navbar position
+        var navbarPosition = 'vertical';
+        {% set horizontalNav = currentUser.getOptionValue("navigationMenuPosition", theme.getSetting("NAVIGATION_MENU_POSITION", "vertical")) == "horizontal" %}
+        {% if horizontalNav %}
+            navbarPosition = 'horizontal';
+        {% endif %}
+
+        // MODULES LIST
+        var modulesList = [];
+        {% for module in modules %}
+            modulesList.push({{ module.getModule()|json_encode|raw }});
+        {% endfor %}
+
+        // USERS LIST
+        var usersList = [];
+        {% for user in users %}
+            usersList.push({{ user|json_encode|raw }});
+        {% endfor %}
+
+        // Structure with API URLs
+        let urlsForApi = {
+            layout: {
+                designer: {
+                    url: "{{ urlFor("layout.designer") }}",
+                    type: 'GET'
+                },
+                get: {
+                    url: "{{ urlFor("layout.search") }}",
+                    type: 'GET'
+                },
+                getForm: {
+                    url: "{{ urlFor("layout.background.form") }}",
+                    type: 'GET'
+                },
+                saveForm: {
+                    url: "{{ urlFor("layout.edit.background") }}",
+                    type: 'PUT'
+                },
+                downloadBackground: {
+                    url: "{{ urlFor("layout.download.background") }}",
+                    type: 'GET'
+                },
+                preview: {
+                    url: "{{ urlFor("layout.preview") }}",
+                    type: 'GET'
+                },
+                checkout: {
+                    url: "{{ urlFor("layout.checkout") }}",
+                    type: 'PUT'
+                }, 
+                publish: {
+                    url: "{{ urlFor("layout.publish") }}",
+                    type: 'PUT'
+                },
+                discard: {
+                    url: "{{ urlFor("layout.discard") }}",
+                    type: 'PUT'
+                },
+                list: {
+                    url: "{{ urlFor("layout.view") }}"
+                },
+                status: {
+                    url: "{{ urlFor("layout.status") }}"
+                },
+                designer: {
+                    url: "{{ urlFor("layout.designer") }}"
+                },
+                schedule: {
+                    url: "{{ urlFor("schedulenow.now.form", {from: 'Layout'}) }}",
+                    type: 'GET'
+                },
+                saveTemplate: {
+                    url: "{{ urlFor("template.from.layout.form") }}",
+                    type: 'GET'
+                },
+                publishForm: {
+                    url: "{{ urlFor("layout.publish.form") }}",
+                    type: 'GET'
+                },
+                discardForm: {
+                    url: "{{ urlFor("layout.discard.form") }}",
+                    type: 'GET'
+                }
+            },
+            region: {
+                transform: {
+                    url: "{{ urlFor("region.position.all") }}",
+                    type: 'PUT',
+                    useMainObjectId: true
+                },
+                getForm: {
+                    url: "{{ urlFor("region.edit.form") }}",
+                    type: 'GET'
+                },
+                saveForm: {
+                    url: "{{ urlFor("region.edit") }}",
+                    type: 'PUT'
+                },
+                create: {
+                    url: "{{ urlFor("region.add") }}",
+                    type: 'POST',
+                    useMainObjectId: true
+                },
+                delete: {
+                    url: "{{ urlFor("region.delete") }}",
+                    type: 'DELETE'
+                },
+                preview: {
+                    url: "{{ urlFor("region.preview") }}",
+                    type: 'GET'
+                },
+                getPermissions:  {
+                    url: "{{ urlFor("user.permissions.form", {entity: 'Region'}) }}",
+                    type: 'GET'
+                }
+            },
+            widget: {
+                getForm: {
+                    url: "{{ urlFor("module.widget.edit.form") }}",
+                    type: 'GET'
+                },
+                saveForm: {
+                    url: "{{ urlFor("module.widget.edit") }}",
+                    type: 'PUT'
+                },
+                preview: {
+                    url: "{{ urlFor("region.preview") }}",
+                    type: 'GET'
+                },
+                add: {
+                    url: "{{ urlFor("module.widget.add") }}",
+                    type: 'POST'
+                },
+                delete: {
+                    url: "{{ urlFor("module.widget.delete") }}",
+                    type: 'DELETE'
+                },
+                getAudio: {
+                    url: "{{ urlFor("module.widget.audio.form") }}",
+                    type: 'GET'
+                },
+                saveAudio:  {
+                    url: "{{ urlFor("module.widget.audio") }}",
+                    type: 'PUT'
+                },
+                getExpiry: {
+                    url: "{{ urlFor("module.widget.expiry.form") }}",
+                    type: 'GET'
+                },
+                saveExpiry:  {
+                    url: "{{ urlFor("module.widget.expiry") }}",
+                    type: 'PUT'
+                },
+                getTransition: {
+                    url: "{{ urlFor("module.widget.transition.edit.form") }}",
+                    type: 'GET'
+                },
+                saveTransition:  {
+                    url: "{{ urlFor("module.widget.transition.edit") }}",
+                    type: 'PUT'
+                },
+                getPermissions:  {
+                    url: "{{ urlFor("user.permissions.form", {entity: 'Widget'}) }}",
+                    type: 'GET'
+                }
+            },
+            library: {
+                get: {
+                    url: "{{ urlFor("library.search") }}",
+                    type: 'GET'
+                }
+            },
+            playlist: {
+                get: {
+                    url: "{{ urlFor("playlist.search") }}",
+                    type: 'GET'
+                },
+                getForm: {
+                    url: "{{ urlFor("playlist.edit.form") }}",
+                    type: 'GET'
+                },
+                addMedia: {
+                    url: "{{ urlFor("playlist.library.assign") }}",
+                    type: 'POST'
+                },
+                addWidget: {
+                    url: "{{ urlFor("module.widget.add") }}",
+                    type: 'POST'
+                },
+                preview: {
+                    url: "{{ urlFor("region.preview") }}",
+                    type: 'GET'
+                },
+                order: {
+                    url: "{{ urlFor("playlist.order") }}",
+                    type: 'POST'
+                }
+            },
+            user: {
+                getPref: {
+                    url: "{{ urlFor("user.pref") }}",
+                    type: 'GET'
+                },
+                savePref: {
+                    url: "{{ urlFor("user.pref") }}",
+                    type: 'POST'
+                },
+                permissions: {
+                    url: "{{ urlFor("user.permissions.form") }}",
+                    type: 'GET'
+                }
+            },
+            media: {
+                isUsed: {
+                    url: "{{ urlFor("library.isused") }}",
+                    type: 'GET'
+                }
+            }
+        };
+
+        {% autoescape "js" %}
+            // TRANSLATIONS
+            var editorsTrans = {
+                deleteTitle: "{{ "Delete %obj%" |trans }}",
+                deleteMultipleTitle: "{{ "Delete selected elements" |trans }}",
+                deleteConfirm: "{{ "Are you sure? All changes related to this object will be erased" |trans }}",
+                yes: "{{ "Yes" |trans }}",
+                no: "{{ "No" |trans }}",
+                selectAll: "{{ "Select All" |trans }}",
+                allChangesSaved: "{{ "All changes saved!" |trans }}",
+                back: "{{ "Back" |trans }}",
+                loadPropertyForObject: "{{ "Load %prop% for %obj%" |trans }}",
+                loading: "{{ "Loading" |trans }}",
+                resetTourNotification: "{{ "Layout Designer Tour enabled!" |trans }}",
+                tooltipsDisabled: "{{ "Tooltips disabled!" |trans }}",
+                tooltipsEnabled: "{{ "Tooltips enabled!" |trans }}",
+                publish: "{{ "Publish" |trans }}",
+                discard: "{{ "Discard"|trans }}"
+            };
+
+            var uploadTrans = {
+                uploadMessage: "{{ "Upload media" |trans }}",
+                addFiles: "{{ "Add files" |trans }}",
+                startUpload: "{{ "Start upload" |trans }}",
+                cancelUpload: "{{ "Cancel upload" |trans }}",
+                processing: "{{ "Processing..." |trans }}",
+                viewLibrary: "{{ "View Library" |trans }}",
+            };
+
+            var deleteMenuTrans = {
+                mainMessage: "{{ "Are you sure you want to remove this %obj%? This action cannot be undone." |trans }}",
+                infoDeleteMessage: "{{ "This widget is linked to Media in the Library which is also in use elsewhere. If this should be deleted then please do so from the Library page." |trans }}",
+                deleteMediaFromLibraryTitle: "{{ "Also delete from the Library?" |trans }}",
+                deleteMediaFromLibraryMessage: "{{ "This widget is linked to Media in the Library. Check this option to also delete that Media." |trans }}",
+                deleteMultipleObjects: "{{ "Are you sure you want to remove these elements? This action cannot be undone."|trans }}"
+            };
+
+            var contextMenuTrans = {
+                editAudio: "{{ "Edit Attached Audio" |trans }}",
+                editExpiry: "{{ "Edit Expiry Dates" |trans }}",
+                editTransIn: "{{ "Edit Transition In"|trans }}",
+                editTransOut: "{{ "Edit Transition Out" |trans }}",
+                editPermissions: "{{ "Edit Permissions" |trans }}",
+                moveLeft: "{{ "Move one step left" |trans }}",
+                moveRight: "{{ "Move one step right" |trans }}",
+                moveTopLeft: "{{ "Move to the top left" |trans }}",
+                moveTopRight: "{{ "Move to the top right" |trans }}",
+                delete: "{{ "Delete"|trans }}"
+            };
+
+            var propertiesPanelTrans = {
+                width: "{{ "Width" |trans }}",
+                height: "{{ "Height" |trans }}",
+                scale: "{{ "Scale"|trans }}"
+            };
+
+            var toolbarTrans = {
+                toolbarTagsMessage: "{{ "%tagCount% tags" |trans }}",
+                deleteObject: "{{ "Delete selected %object%" |trans }}",
+                selectMultipleWidgets: "{{ "Select multiple widgets" |trans }}",
+                changeLayout: "{{ "Change Layout" |trans }}",
+                options: "{{ "Options" |trans }}",
+                displayTooltipsName: "{{ "Tooltips?" |trans }}",
+                displayTooltipsTitle: "{{ "Show/Hide Tooltips" |trans }}",
+                resetTour: "{{ "Show tour!" |trans }}",
+                resetTourTitle: "{{ "Show Layout Designer tour" |trans }}",
+                createNewTab: "{{ "Library Media Search" |trans }}",
+                closeAllTabs: "{{ "Close all tabs" |trans }}",
+                actions: "{{ "Actions" |trans }}",
+                search: "{{ "Search" |trans }}",
+                add: "{{ "Add" |trans }}",
+                grab: "{{ "Grab" |trans }}",
+                addAsFavourite: "{{ "Mark as favourite" |trans }}",
+                addedToFavourites: "{{ "Module added to favourites!" |trans }}",
+                moduleNavStart: "{{ "Scroll to the start!" |trans }}",
+                moduleNavEnd: "{{ "Scroll to the end!" |trans }}",
+                moduleNavLeft: "{{ "Scroll left!" |trans }}",
+                moduleNavRight: "{{ "Scroll right!" |trans }}",
+                removedFromFavourites: "{{ "Module removed from favourites!" |trans }}",
+                noResults: "{{ "No results for the filter!" |trans }}",
+                searchFilters: {
+                    name: "{{ "Name" |trans }}",
+                    tag: "{{ "Tag" |trans }}",
+                    type: "{{ "Type" |trans }}",
+                    owner: "{{ "Owner"|trans }}"
+                },
+                tabName: "{{ "Library Search %tagId%" |trans }}",
+                tableHeader: {
+                    toolsName: "{{ "Tools" |trans }}",
+                    id: "{{ "Id"|trans }}",
+                    name: "{{ "Name"|trans }}",
+                    type: "{{ "Type"|trans }}",
+                    tags: "{{ "Tags"|trans }}",
+                    thumbnail: "{{ "Thumbnail"|trans }}"
+                },
+                queue: {
+                    title: "{{ "Media Add Queue"|trans }}",
+                    clear: "{{ "Clear Queue"|trans }}",
+                    addToRegion: "{{ "Add to Selected Region"|trans }}",
+                    addToPlaylist: "{{ "Add to Playlist"|trans }}",
+                    selectRegion: "{{ "Click in Region to Add"|trans }}",
+                    cancel: "{{ "Cancel"|trans }}"
+                },
+                menuItems: {
+                    toolsName: "{{ "Tools" |trans }}",
+                    toolsTitle: "{{ "Layout Designer tools" |trans }}",
+                    widgetsName: "{{ "Widgets" |trans }}",
+                    widgetsTitle: "{{ "Layout Designer widgets" |trans }}",
+                    libraryName: "{{ "Library" |trans }}",
+                    libraryTitle: "{{ "Library search"|trans }}"
+                },
+                tools: {
+                    region: {
+                        name: "{{ "Region" |trans }}",
+                        description: "{{ "Add a Region"|trans }}"
+                    },
+                    audio: {
+                        name: "{{ "Audio" |trans }}",
+                        description: "{{ "Upload Audio files to assign to Widgets"|trans }}"
+                    },
+                    expiry: {
+                        name: "{{ "Expiry Dates" |trans }}",
+                        description: "{{ "Enter start and end times for Widgets"|trans }}"
+                    },
+                    transitionIn: {
+                        name: "{{ "Transition In" |trans }}",
+                        description: "{{ "Apply a Transition type for the start of a media item"|trans }}"
+                    },
+                    transitionOut: {
+                        name: "{{ "Transition Out" |trans }}",
+                        description: "{{ "Apply a Transition type for the end of a media item"|trans }}"
+                    },
+                    permissions: {
+                        name: "{{ "Permissions" |trans }}",
+                        description: "{{ "Set View, Edit and Delete Permissions for Widgets and Regions"|trans }}"
+                    }
+                },
+                window: {
+                    drag: "{{ "Move Window" |trans }}",
+                    close: "{{ "Close Window" |trans }}",
+                    minimise: "{{ "Minimise Window" |trans }}",
+                    newTab: "{{ "New Tab"|trans }}"
+                }
+            };
+
+            var topbarTrans = {
+                name: "{{ "Name" |trans }}",
+                nameDetail: "{{ "Layout name" |trans }}",
+                duration: "{{ "Duration" |trans }}",
+                durationDetail: "{{ "Layout duration" |trans }}",
+                dimensions: "{{ "Dimensions" |trans }}",
+                dimensionsDetail: "{{ "Layout dimensions"|trans }}"
+            };
+
+            var historyManagerTrans = {
+                revert: {
+                    saveForm: "{{ "Revert %target% form save" |trans }}",
+                    order: "{{ "Revert %target% order" |trans }}",
+                    transform: "{{ "Revert %target% transformation" |trans }}",
+                    addWidget: "{{ "Revert %target% creation" |trans }}",
+                    addMedia: "{{ "Revert %target% assignment" |trans }}",
+                    create: "{{ "Revert %target% creation"|trans }}"
+                }
+            };
+
+            var playlistAddFilesTrans = {
+                uploadMessage: "{{ "Replace" |trans }}",
+                addFiles: "{{ "Add Replacement" |trans }}",
+                startUpload: "{{ "Start Replace" |trans }}",
+                cancelUpload: "{{ "Cancel Replace" |trans }}",
+                processing: "{{ "Processing..." |trans }}",
+                updateInLayouts: {
+                    title: "{{ "Update this media in all layouts it is assigned to?" |trans }}",
+                    helpText: "{{ "Note: It will only be updated in layouts you have permission to edit."|trans }}"
+                },
+                deleteOldRevisions: {
+                    title: "{{ "Delete the old version?" |trans }}",
+                    helpText: "{{ "Completely remove the old version of this media item if a new file is being uploaded."|trans }}"
+                }
+            };
+
+            var errorMessagesTrans = {
+                error: "{{ "ERROR" |trans }}",
+                loadingLayout: "{{ "There was a problem loading the Layout!" |trans }}",
+                loadingPlaylist: "{{ "There was a problem loading the Playlist!" |trans }}",
+                userSavePreferencesFailed: "{{ "User save preferences failed!" |trans }}",
+                userLoadPreferencesFailed: "{{ "User load preferences failed!" |trans }}",
+                libraryLoadFailed: "{{ "Library load failed!" |trans }}",
+                formLoadFailed: "{{ "Form load failed!" |trans }}",
+                revertFailed: "{{ "Revert failed: %error%" |trans }}",
+                saveOrderFailed: "{{ "Save order failed: %error%" |trans }}",
+                deleteFailed: "{{ "Object delete failed: %error%" |trans }}",
+                saveAllChangesFailed: "{{ "Save all changes failed!" |trans }}",
+                removeAllChangesFailed: "{{ "Remove all changes failed!!" |trans }}",
+                addMediaFailed: "{{ "Add media failed: %error%" |trans }}",
+                addModuleFailed: "{{ "Add module failed: %error%" |trans }}",
+                createRegionFailed: "{{ "Create region failed: %error%" |trans }}",
+                listOrderNotChanged: "{{ "List order not Changed!" |trans }}",
+                playlistOrderSave: "{{ "Playlist save order failed!" |trans }}",
+                getFormFailed: "{{ "Get form failed!" |trans }}",
+                transformRegionFailed: "{{ "Transform region failed!" |trans }}",
+                previewFailed: "{{ "Preview failed!" |trans }}",
+                noWidgetsNeedSaving: "{{ "No widgets need saving!"|trans }}"
+            };
+
+            var widgetStatusTrans = {
+                setToStart: "{{ "Set to start" |trans }}",
+                setToExpire: "{{ "Set to expire" |trans }}",
+                expired: "{{ "Expired" |trans }}",
+                startTime: "{{ "Start Time"|trans }}",
+                endTime: "{{ "End Time"|trans }}"
+            };
+
+            var datasetQueryBuilderTranslations = {
+                ascTitle: "{{ "Ascending" |trans }}",
+                descTitle: "{{ "Descending" |trans }}",
+                filterOptions: [
+                    {
+                        id: "starts-with",
+                        value: "{{ "starts with"|trans }}"
+                    }, {
+                        id: "ends-with",
+                        value: "{{ "ends with"|trans }}"
+                    }, {
+                        id: "contains",
+                        value: "{{ "contains"|trans }}"
+                    }, {
+                        id: "equals",
+                        value: "{{ "equals"|trans }}"
+                    }, {
+                        id: "not-starts-with",
+                        value: "{{ "does not start with"|trans }}"
+                    }, {
+                        id: "not-ends-with",
+                        value: "{{ "does not end with"|trans }}"
+                    }, {
+                        id: "not-contains",
+                        value: "{{ "does not contain"|trans }}"
+                    }, {
+                        id: "not-equals",
+                        value: "{{ "does not equal"|trans }}"
+                    }, {
+                        id: "greater-than",
+                        value: "{{ "greater than"|trans }}"
+                    }, {
+                        id: "less-than",
+                        value: "{{ "less than"|trans }}"
+                    }
+                ],
+                filterOperatorOptions: [
+                    {
+                        id: "OR",
+                        value: "{{ "Or"|trans }}"
+                    }, {
+                        id: "AND",
+                        value: "{{ "And"|trans }}"
+                    }
+                ]
+            };
+        {% endautoescape %}
+    </script>
+{% endblock %}

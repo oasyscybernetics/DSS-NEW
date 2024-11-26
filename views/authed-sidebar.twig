@@ -1,0 +1,176 @@
+<div id="sidebar-wrapper">
+    <ul class="sidebar">
+        <li class="sidebar-main"><a href="{{ urlFor("home") }}"><img class="logo" src="{{ theme.uri("img/xibologo.png") }}" width="130"></a></li>
+
+         <li class="sidebar-list"><a href="{{ urlFor("home") }}"> <i class="fa fa-dashboard"></i> {% trans "Dashboard" %}</a></li>
+
+        {% if currentUser.routeViewable("/schedule") %}
+            <li class="sidebar-title"><a>{% trans "Calendar" %}</a></li>
+            <li class="sidebar-list"><a href="{{ urlFor("schedule.view") }}"><i class="fa fa-calendar"></i> {% trans "Schedule" %}</a></li>
+        {% endif %}
+
+        {% if currentUser.routeViewable("/daypart") %}
+            <li class="sidebar-list"><a href="{{ urlFor("daypart.view") }}"><i class="fa fa-calendar-check-o"></i> {% trans "Dayparting" %}</a></li>
+        {% endif %}
+
+        {% if currentUser.routeViewable("/campaign") or currentUser.routeViewable("/layout") or currentUser.routeViewable("/template") or currentUser.routeViewable("/resolution") %}
+            <li class="sidebar-title"><a>{% trans "Design" %}</a></li>
+            {% if currentUser.routeViewable("/campaign") %}
+               <!--  <li class="sidebar-list"><a href="{{ urlFor("campaign.view") }}"><i class="fa fa-archive"></i> {% trans "Campaigns" %}</a></li> -->
+            {% endif %}
+
+            {% if currentUser.routeViewable("/layout") %}
+                <li class="sidebar-list"><a href="{{ urlFor("layout.view") }}"><i class="fa fa-newspaper-o"></i> {% trans "Layouts" %}</a></li>
+            {% endif %}
+
+            {% if currentUser.routeViewable("/template") %}
+                <li class="sidebar-list"><a href="{{ urlFor("template.view") }}"><i class="fa fa-clone"></i> {% trans "Templates" %}</a></li>
+            {% endif %}
+
+            {% if currentUser.routeViewable("/resolution") %}
+               <!-- <li class="sidebar-list"><a href="{{ urlFor("resolution.view") }}"><i class="fa fa-desktop"></i> {% trans "Resolutions" %}</a></li> -->
+            {% endif %}
+        {% endif %}
+
+        {% if currentUser.routeViewable("/library") or currentUser.routeViewable("/playlist")  or currentUser.routeViewable("/dataset") %}
+            <li class="sidebar-title"><a>{% trans "Library" %}</a></li>
+            {% if currentUser.routeViewable("/playlist") %}
+                <!-- <li class="sidebar-list"><a href="{{ urlFor("playlist.view") }}">{% trans "Playlists" %}</a></li> -->
+            {% endif %}
+
+            {% if currentUser.routeViewable("/library") %}
+                <li class="sidebar-list"><a href="{{ urlFor("library.view") }}"><i class="fa fa-picture-o"></i> {% trans "Media" %}</a></li>
+            {% endif %}
+
+            {% if currentUser.routeViewable("/dataset") %}
+                <!-- <li class="sidebar-list"><a href="{{ urlFor("dataset.view") }}"><i class="fa fa-folder-open-o"></i> {% trans "DataSets" %}</a></li> -->
+            {% endif %}
+        {% endif %}
+
+        {% if currentUser.routeViewable("/display") or currentUser.routeViewable("/displaygroup") or currentUser.routeViewable("/stats") or currentUser.routeViewable("/displayprofile") %}
+            <li class="sidebar-title"><a>{% trans "Displays" %}</a></li>
+            {% if currentUser.routeViewable("/display") %}
+                <li class="sidebar-list"><a href="{{ urlFor("display.view") }}"><i class="fa fa-tv"></i> {% trans "Displays" %}</a></li>
+            {% endif %}
+
+            {% if currentUser.routeViewable("/displaygroup") %}
+                <li class="sidebar-list"><a href="{{ urlFor("displaygroup.view") }}"><i class="fa fa-laptop"></i> {% trans "Display Groups" %}</a></li>
+            {% endif %}
+
+            {% if currentUser.routeViewable("/displayprofile") %}
+                <!-- <li class="sidebar-list"><a href="{{ urlFor("displayprofile.view") }}"><i class="fa fa-sticky-note-o"></i> {% trans "Display Settings" %}</a></li> -->
+            {% endif %}
+
+            {% if currentUser.routeViewable("/playersoftware") %}
+                <!-- <li class="sidebar-list"><a href="{{ urlFor("playersoftware.view") }}">{% trans "Player Versions" %}</a></li> -->
+            {% endif %}
+
+            {% if currentUser.routeViewable("/command") %}
+                <!-- <li class="sidebar-list"><a href="{{ urlFor("command.view") }}"><i class="fa fa-terminal"></i> {% trans "Commands" %}</a></li> -->
+            {% endif %}
+        {% endif %}
+
+        {% if currentUser.routeViewable("/user") and (currentUser.isGroupAdmin() or currentUser.isSuperAdmin()) %}
+            {% set userMenuViewable = true %}
+        {% else %}
+            {% set userMenuViewable = false %}
+        {% endif %}
+
+        {% if userMenuViewable or currentUser.routeViewable("/usergroup") or currentUser.routeViewable("/admin") or currentUser.routeViewable("/application") or currentUser.routeViewable("/module") or currentUser.routeViewable("/transition") %}
+            <li class="sidebar-title"><a>{% trans "Administration" %}</a></li>
+
+            {% if userMenuViewable %}
+                <li class="sidebar-list"><a href="{{ urlFor("user.view") }}"><i class="fa fa-user"></i> {% trans "Users" %}</a></li>
+            {% endif %}
+
+            {% if currentUser.routeViewable("/group") %}
+                <li class="sidebar-list"><a href="{{ urlFor("group.view") }}"><i class="fa fa-users"></i> {% trans "User Groups" %}</a></li>
+            {% endif %}
+
+            {% if currentUser.routeViewable("/admin") %}
+                <!-- <li class="sidebar-list"><a href="{{ urlFor("admin.view") }}"><i class="fa fa-gear"></i> {% trans "Settings" %}</a></li> -->
+            {% endif %}
+
+            {% if currentUser.routeViewable("/application") %}
+             <!--   <li class="sidebar-list"><a href="{{ urlFor("application.view") }}">{% trans "Applications" %}</a></li> -->
+            {% endif %}
+
+            {% if currentUser.routeViewable("/module") %}
+               <!-- <li class="sidebar-list"><a href="{{ urlFor("module.view") }}"><i class="fa fa-briefcase"></i> {% trans "Modules" %}</a></li> -->
+            {% endif %}
+
+            {% if currentUser.routeViewable("/transition") %}
+              <!--  <li class="sidebar-list"><a href="{{ urlFor("transition.view") }}"><i class="fa fa-keyboard-o"></i> {% trans "Transitions" %}</a></li> -->
+            {% endif %}
+
+            {% if currentUser.routeViewable("/task") %}
+               <!-- <li class="sidebar-list"><a href="{{ urlFor("task.view") }}"><i class="fa fa-cogs"></i> {% trans "Tasks" %}</a></li> -->
+            {% endif %}
+
+            {% if currentUser.isSuperAdmin() %}
+                <!-- <li class="sidebar-list"><a href="{{ urlFor("tag.view") }}"><i class="fa fa-cogs"></i> {% trans "Tags" %}</a></li> -->
+            {% endif %}
+        {% endif %}
+
+
+        {% if currentUser.routeViewable("/stats") %}
+
+            <li class="sidebar-title"><a>{% trans "Reporting" %}</a></li>
+
+            {% if currentUser.routeViewable("/stats") %}
+                <!-- <li class="sidebar-list"><a href="{{ urlFor("stats.view") }}"><i class="fa fa-bar-chart"></i> {% trans "Display Statistics" %}</a></li> -->
+            {% endif %}
+
+            {% if currentUser.routeViewable("/stats") %}
+                <li class="sidebar-list"><a href="{{ urlFor("stats.proofofplay.view") }}"><i class="fa fa-building-o"></i> {% trans "Proof of Play" %}</a></li>
+            {% endif %}
+
+            {% if currentUser.routeViewable("/stats") %}
+               <!-- <li class="sidebar-list"><a href="{{ urlFor("stats.library.view") }}"><i class="fa fa-database"></i> {% trans "Library Usage" %}</a></li> -->
+            {% endif %}
+        {% endif %}
+
+
+        {% if currentUser.routeViewable("/report") %}
+            {% if currentUser.routeViewable("/report") %}
+              <!--  <li class="sidebar-list"><a href="{{ urlFor("reportschedule.view") }}">{% trans "Report Schedules" %}</a></li> -->
+            {% endif %}
+
+            {% if currentUser.routeViewable("/report") %}
+                <!-- <li class="sidebar-list"><a href="{{ urlFor("savedreport.view") }}">{% trans "Saved Reports" %}</a></li> -->
+            {% endif %}
+        {% endif %}
+
+        {% if currentUser.routeViewable("/log") or currentUser.routeViewable("/sessions") or currentUser.routeViewable("/auditlog") or currentUser.routeViewable("/fault") or currentUser.routeViewable("/help") %}
+            <li class="sidebar-title"><a>{% trans "Advanced" %}</a></li>
+            {% if currentUser.routeViewable("/log") %}
+                <!-- <li class="sidebar-list"><a href="{{ urlFor("log.view") }}"><i class="fa fa-edit"></i> {% trans "Log" %}</a></li> -->
+            {% endif %}
+
+            {% if currentUser.routeViewable("/sessions") %}
+                <!-- <li class="sidebar-list"><a href="{{ urlFor("sessions.view") }}"><i class="fa fa-eye"></i> {% trans "Sessions" %}</a></li> -->
+            {% endif %}
+
+            {% if currentUser.routeViewable("/auditlog") %}
+                <li class="sidebar-list"><a href="{{ urlFor("auditlog.view") }}"><i class="fa fa-exclamation-triangle"></i> {% trans "Audit Trail" %}</a></li>
+            {% endif %}
+
+            {% if currentUser.routeViewable("/fault") %}
+               <!-- <li class="sidebar-list"><a href="{{ urlFor("fault.view") }}">{% trans "Report Fault" %}</a></li> -->
+            {% endif %}
+
+            {% if currentUser.routeViewable("/help") %}
+               <!-- <li class="sidebar-list"><a href="{{ urlFor("help.view") }}">{% trans "Help Links" %}</a></li> -->
+            {% endif %}
+        {% endif %}
+    </ul>
+
+     <!--<div class="sidebar-footer">
+        <div class="col-sm-6">
+            <a class="XiboFormButton" href="{{ urlFor("about") }}" title="{% trans "About the CMS" %}">{% trans "About" %}</a>
+        </div>
+        <div class="col-sm-6">
+            <a href="{{ helpService.address() }}" target="_blank" title="{% trans "Open the Manual in a new Window" %}">{% trans "Manual" %}</a>
+        </div> 
+    </div> -->
+</div>

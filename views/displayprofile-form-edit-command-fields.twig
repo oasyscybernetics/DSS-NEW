@@ -1,0 +1,23 @@
+{#
+/*
+ * Oasys Digital Signage
+ * 
+ * 
+ */
+#}
+{% for field in commands %}
+    {% set title %}{% trans "Name" %}{% endset %}
+    {{ forms.disabled("command", title, field.command, field.description) }}
+
+    {% set fieldId = "commandString_" ~ field.commandId %}
+    {% set title %}{% trans "Command" %}{% endset %}
+    {% set helpText %}{% trans "The Command String for this Command on this display" %}{% endset %}
+    {{ forms.input(fieldId, title, field.commandString, helpText) }}
+
+    {% set fieldId = "validationString_" ~ field.commandId %}
+    {% set title %}{% trans "Validation" %}{% endset %}
+    {% set helpText %}{% trans "The Validation String for this Command on this display" %}{% endset %}
+    {{ forms.input(fieldId, title, field.validationString, helpText) }}
+
+    <hr>
+{% endfor %}

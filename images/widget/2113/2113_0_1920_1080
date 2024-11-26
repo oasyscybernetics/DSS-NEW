@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1920" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    
+            <link href="/web/library/download/25?preview=1" rel="stylesheet" media="screen">
+            <link href="/web/library/download/29?preview=1" rel="stylesheet" media="screen">
+            <link href="/web/library/download/28?preview=1" rel="stylesheet" media="screen">
+            <link href="/web/library/download/27?preview=1" rel="stylesheet" media="screen">
+            <style type="text/css"> body { background-color: transparent }</style>
+            <style type="text/css">
+                body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1;
+}
+
+.shadowed {
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+    filter: dropshadow(color=rgba(255, 255, 255, 0.5), offx=2, offy=2);
+}
+
+.container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 960px !important;
+    height: 340px !important;
+}
+
+.main-panel {
+    margin-top: 10px;
+    height: 137px;
+}
+
+.current-temp {
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    color: #fff;
+}
+
+.footer {
+    height: 290px;
+    color: #fff;
+    padding: 30px 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.main-icon {
+    font-size: 70px;
+    color: #fff;
+}
+
+.big-day {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #272625;
+}
+
+.big-icon {
+    font-size: 90px;
+    padding-bottom: 30px;
+    color: #272625;
+}
+
+.big-temp {
+    padding: 10px 0px;
+    font-size: 45px;
+    color: #272625;
+}
+
+.small-day {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #272625;
+}
+
+.small-icon {
+    font-size: 30px;
+    padding: 50px 0px 10px 0px;
+    color: #272625;
+}
+
+.small-temp {
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #272625;
+}
+
+.powered {
+    text-align: center;
+    color: #272625;
+}
+
+.details-box {
+    height: 220px;
+    padding-left: 30px;
+    color: #272625;
+}
+
+.upcoming-days {
+    height: 195px;
+    margin-top: 20px !important;
+    text-align: center;
+}
+
+.selector-day {
+    font-size: 15px;
+    font-weight: light;
+    margin-top: 25px;
+}
+
+.selector-temp {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+}
+            </style>
+        <link href="/web/library/fontcss" rel="stylesheet" media="screen"><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"><div class="container">
+    <div class="main-panel">
+        <div class="row footer">
+            <div class="col-xs-4  details-box text-center shadowed">
+                <div class="big-icon"><i class="wi wi-day-cloudy"></i></div>
+                <div class="big-day">Tue</div>
+                <div class="big-temp">29ºC</div>
+            </div>
+            <div class="col-xs-2  upcoming-days shadowed">
+    <div class="small-icon"><i class="wi wi-day-sunny"></i></div>
+    <div class="small-temp">27 º C</div>
+    <div class="small-day">Wed</div>
+</div><div class="col-xs-2  upcoming-days shadowed">
+    <div class="small-icon"><i class="wi wi-cloudy"></i></div>
+    <div class="small-temp">27 º C</div>
+    <div class="small-day">Thu</div>
+</div><div class="col-xs-2  upcoming-days shadowed">
+    <div class="small-icon"><i class="wi wi-day-cloudy"></i></div>
+    <div class="small-temp">27 º C</div>
+    <div class="small-day">Fri</div>
+</div><div class="col-xs-2  upcoming-days shadowed">
+    <div class="small-icon"><i class="wi wi-day-cloudy"></i></div>
+    <div class="small-temp">27 º C</div>
+    <div class="small-day">Sat</div>
+</div>
+            <div class="col-xs-12">
+                <div class="powered">Powered by OpenWeather</div>
+            </div>
+        </div>
+    </div>
+</div></div>
+</body>
+<script type="text/javascript" src="/web/library/download/3?preview=1"></script><script type="text/javascript" src="/web/library/download/5?preview=1"></script><script type="text/javascript" src="/web/library/download/12?preview=1"></script><script>
+
+            var options = {"originalWidth":"1920","originalHeight":"1080","widgetDesignWidth":"960","widgetDesignHeight":"340"}
+
+            $(document).ready(function() {
+                $("body").xiboLayoutScaler(options);
+                $("#content").find("img").xiboImageRender(options);
+            });
+        </script>
+</html>
+

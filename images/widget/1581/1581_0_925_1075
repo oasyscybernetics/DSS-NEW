@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=925" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content">
+            <div id="graph-0" style="">
+                <canvas id="graph-0_graph" width="925" height="1075">
+                    [No Canvas support]
+                </canvas>
+            </div>
+        <script type="text/javascript" src="/library/download/3?preview=1"></script><script type="text/javascript" src="/library/download/5?preview=1"></script><script type="text/javascript" src="/library/download/4?preview=1"></script><script type="text/javascript" src="/library/download/7?preview=1"></script><script>
+            $(document).ready(function() {
+                Chart.defaults.global.defaultFontSize = 24;
+                Chart.defaults.global.defaultFontColor = "#ffffff";
+                var ctx = document.getElementById("graph-0_graph");
+                var chart = new Chart(ctx, {"data":{"datasets":[{"label":"Morning","data":["30","24","30","20","14","25"],"borderColor":""},{"label":"Afternoon","data":["25","15","15","12","7","24"],"borderColor":"#7293CB"},{"label":"Evening","data":["45","35","35","24","24","35"],"borderColor":"#E1974C"}],"labels":["Monday","Tuesday","Wednesday","Thursday","Saturday","Sunday"]},"type":"radar","options":{"legend":{"display":false},"title":{"display":true,"text":"Number of dailsy visitors By Session"}}});
+                
+                // Scale the Layout after rendering
+                $("#graph-0").xiboLayoutScaler({"type":"chart","useDuration":0,"duration":240,"originalWidth":"925","originalHeight":"1075"});
+            });</script>
+        </div>
+</body>
+
+</html>
+

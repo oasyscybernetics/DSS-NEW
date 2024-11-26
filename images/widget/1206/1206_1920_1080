@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[[ViewPortWidth]]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <style type="text/css">.image img { width:100%;}.cycle-overlay {color: white;background: black;opacity: .6;filter: alpha(opacity=60);position: absolute;bottom: 0;width: 100%;padding: 15px;text-align:center;}</style><link href="fonts.css" rel="stylesheet" media="screen"><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script><script type="text/javascript" src="jquery-cycle-2.1.6.min.js"></script><script type="text/javascript" src="xibo-layout-scaler.js"></script><script type="text/javascript" src="xibo-text-render.js"></script><script type="text/javascript" src="xibo-image-render.js"></script><script type="text/javascript">   var options = {"type":"ticker","fx":"shuffle","duration":5,"durationIsPerItem":true,"numItems":10,"takeItemsFrom":"start","reverseOrder":0,"itemsPerPage":0,"randomiseItems":0,"speed":5,"originalWidth":"1920","originalHeight":"1080"};   var items = ["<div class=\"image\"><img src=\"ticker_b5d97b84b5328211486d4cb939388527\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Trump verleent Nederlandse advocaat, huurlingen en Congresleden gratie<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_cafe4634a098736c48f546f5c65ee292\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Drie Franse agenten doodgeschoten na melding over huiselijk geweld<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_40e3268e9e1db1464966482bf8dfa033\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Defensie onderzoekt melding veteraan over mogelijke burgerdoden in Uruzgan<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_202d98978052e726cd196af28ccfaf91\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Video | Chinese commandant redt pupil die granaat laat glippen<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_752886287ee2451dfff1e6ff031a2cc9\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">'Hack medicijnagentschap EMA waarschijnlijk werk van buitenlandse overheid'<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_7e00713e90b88da638322131052dad4a\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Van Gogh Museum verwacht door coronacrisis pas in 2023 einde aan tekorten<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_822bc8df6099d2fd4550ffc90ba718fb\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Liveblog corona | Grens tussen VK en Frankrijk weer open voor vrachtverkeer<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_925d1d3b6649bf76edece4d2129ebab0\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Weerbericht: Dichte ochtendmist in het noorden en buien vanuit het zuiden<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_e73d332e9ed0813870922f58bcc4d15c\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Reizigers uit VK en Zuid-Afrika weer welkom, wel negatieve coronatest nodig<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_f896a87eb897b815d81855a40c388ab5\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Podcast | 'Onafhankelijkheid brengt Poolse rechters juist in de problemen'<\/p><\/div><\/div>","<span id=\"copyright\">https:\/\/xibo.org.uk\/<\/span>"];   $(document).ready(function() {        $("body").xiboLayoutScaler(options); if(items != false) { $("#content").xiboTextRender(options, items); } $("#content").find("img").xiboImageRender(options);    }); </script>
+</html>
+<!-- NUMITEMS=10 -->
+<!-- DURATION=50 -->

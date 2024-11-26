@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[[ViewPortWidth]]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    
+            <link href="bootstrap.min.css" rel="stylesheet" media="screen">
+            <link href="weather-icons.min.css" rel="stylesheet" media="screen">
+            <link href="font-awesome.min.css" rel="stylesheet" media="screen">
+            <link href="animate.css" rel="stylesheet" media="screen">
+            <style type="text/css"> body { background-color: transparent }</style>
+            <style type="text/css">
+                body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1;
+    color: #fff;
+}
+
+.container {
+    width: 960px !important;
+    height: 493px !important;
+}
+
+.contenedor {
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.56);
+    padding-top: 45px;
+}
+
+.upcoming {
+    height: 193px;
+    background-color: rgba(0, 0, 0, 0.56);
+    border-top: 2px solid #fff;
+}
+
+.city {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.country {
+    font-size: 25px;
+}
+
+.temp {
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.feels {
+    font-size: 30px;
+}
+
+.main-icon {
+    font-size: 200px;
+}
+
+.day-title {
+    font-style: italic;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.icon-weather {
+    padding: 25px 0px;
+    font-size: 35px;
+}
+
+.temp-small {
+    font-size: 18px;
+}
+
+.top-small {
+    padding-top: 30px;
+}
+
+.border {
+    border-right: 2px solid #fff;
+}
+
+.rightnow {
+    height: 123.25px;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.56);
+}
+
+.now {
+    font-size: 25px;
+}
+
+.current-wea {
+    font-size: 22px;
+    padding: 10px 0px;
+}
+
+.extra-info {
+    font-size: 18px;
+}
+
+.small-border {
+    border-bottom: 2px solid #fff;
+}
+            </style>
+        <link href="fonts.css" rel="stylesheet" media="screen"><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"><div class="container">
+    <div class="row">
+        <div class="col-xs-9 main-col main-section">
+            <div class="contenedor">
+                <div class="col-xs-6 pull-left">
+                    <div class="feels">Feels Like</div>
+                    <div class="temp">8ºC</div>
+                    <div class="powered">Powered by OpenWeather</div>
+                </div>
+                <div class="col-xs-6 main-icon"><i class="wi wi-day-cloudy"></i></div>
+            </div>
+
+
+            <div class="upcoming top-small">
+                <div class="col-xs-12 text-center">
+                    <div class="col-xs-3 border">
+    <div class="day-title">Tue</div>
+    <i class="wi wi-rain icon-weather"></i>
+    <div class="temp-small">14 º C</div>
+</div><div class="col-xs-3 border">
+    <div class="day-title">Wed</div>
+    <i class="wi wi-rain icon-weather"></i>
+    <div class="temp-small">13 º C</div>
+</div><div class="col-xs-3 border">
+    <div class="day-title">Thu</div>
+    <i class="wi wi-day-snow icon-weather"></i>
+    <div class="temp-small">10 º C</div>
+</div><div class="col-xs-3 border">
+    <div class="day-title">Fri</div>
+    <i class="wi wi-cloudy icon-weather"></i>
+    <div class="temp-small">5 º C</div>
+</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xs-3">
+            <div class="col-xs-12 rightnow small-border ">
+                <div class="now">
+                   Right now
+                </div>
+                <div class="current-wea">
+                    <strong>Wind</strong>
+                </div>
+                <div class="extra-info">S 9.17 MPH</div>
+            </div>
+            <div class="col-xs-12 rightnow small-border ">
+                <div class="current-wea">
+                    <strong>Humidity</strong>
+                </div>
+                <div class="extra-info">87%</div>
+            </div>
+            <div class="col-xs-12 rightnow small-border ">
+                <div class="current-wea">
+                    <strong>Pressure</strong>
+                </div>
+                <div class="extra-info">10.05 mb</div>
+            </div>
+            <div class="col-xs-12 rightnow">
+                <div class="current-wea">
+                    <strong>Visibility</strong>
+                </div>
+                <div class="extra-info">5.5935363579863 mi</div>
+            </div>
+        </div>
+    </div>
+</div></div>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script><script type="text/javascript" src="xibo-layout-scaler.js"></script><script type="text/javascript" src="xibo-image-render.js"></script><script>
+
+            var options = {"originalWidth":"968","originalHeight":"411","widgetDesignWidth":970,"widgetDesignHeight":493}
+
+            $(document).ready(function() {
+                $("body").xiboLayoutScaler(options);
+                $("#content").find("img").xiboImageRender(options);
+            });
+        </script>
+</html>
+

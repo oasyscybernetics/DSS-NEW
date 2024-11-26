@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1920" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <link href="/web/library/fontcss" rel="stylesheet" media="screen"><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="/web/library/download/3?preview=1"></script><script type="text/javascript" src="/web/library/download/11?preview=1"></script><script type="text/javascript" src="/web/library/download/8?preview=1"></script><script type="text/javascript" src="/web/library/download/5?preview=1"></script><script type="text/javascript" src="/web/library/download/6?preview=1"></script><script type="text/javascript" src="/web/library/download/12?preview=1"></script><script type="text/javascript">   var options = {"type":"ticker","fx":"marqueeLeft","duration":5,"durationIsPerItem":false,"numItems":10,"takeItemsFrom":"start","reverseOrder":0,"itemsPerPage":0,"randomiseItems":0,"speed":2,"originalWidth":"1920","originalHeight":"1080"};   var items = ["<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Video | Amerikaan filmt hoe enorme lawine op hem afkomt<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Verkeer ondervindt ook dinsdag nog overlast, NS zet weer minder treinen in<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>The Supremes-zangeres Mary Wilson op 76-jarige leeftijd overleden<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Regering Suriname schaft herdenking coup af als vrije dag<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Opnieuw arrestaties en waterkanonnen bij protesten Myanmar<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Onderzoek: Meer dan helft Haagse verhuurmakelaars bereid tot discrimineren<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Podcast | 'Vluchtende senatoren gaan over lot Trump in afzettingsrechtzaak'<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Nederlanders in 2020 voorzichtiger met persoonlijke gegevens op het internet<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Bolivia onderzoekt mysterieuze dood 35 andescondors<\/strong><\/span><\/span><\/p>","<p style=\"font-family: Arial, Verdana, sans-serif;\"><span style=\"font-size:48px;\"><span style=\"color: #Color#;\"><strong>Liveblog corona | Inspectie wil strengere transporteisen voor vaccins<\/strong><\/span><\/span><\/p>","<span id=\"copyright\">https:\/\/www.ed.gov<\/span>"];   $(document).ready(function() {        $("body").xiboLayoutScaler(options); if(items != false) { $("#content").xiboTextRender(options, items); } $("#content").find("img").xiboImageRender(options);    }); </script>
+</html>
+<!-- NUMITEMS=10 -->
+<!-- DURATION=5 -->

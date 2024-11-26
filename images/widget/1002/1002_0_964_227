@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=964" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <link href="/library/fontcss" rel="stylesheet" media="screen">
+        <link href="/library/download/25?preview=1" rel="stylesheet" media="screen"><style type="text/css">body {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    }
+#clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 178px;
+    }
+#clockdiv > div {
+    padding: 10px 15px;
+    border-radius: 4px;
+    background: #00BF96;
+    display: inline-block;
+    width: 275px;
+    }
+#clockdiv div > span {
+text-align: center;
+    padding: 15px 0;
+    width: 240px;
+    border-radius: 4px;
+    background: #00816A;
+    display: inline-block;
+    }
+.smalltext {
+    padding-top: 5px;
+    font-size: 64px;
+    }
+.warning > #clockdiv > div {
+    background: darkred;
+    }
+.warning > #clockdiv > div > span {
+    background: red;
+    }</style><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="/library/download/3?preview=1"></script><script type="text/javascript" src="/library/download/4?preview=1"></script><script type="text/javascript" src="/library/download/5?preview=1"></script><script type="text/javascript" src="/library/download/10?preview=1"></script><script type="text/javascript" src="/library/download/12?preview=1"></script><script type="text/javascript">   var options = {"type":"countdown","duration":60,"originalWidth":"964","originalHeight":"227","widgetDesignWidth":"600","widgetDesignHeight":"400","countdownType":"1","countdownDuration":"0","countdownDate":null,"countdownWarningDuration":"0","countdownWarningDate":null};   var body = "<div id=\"clockdiv\">\n  <div><span class=\"minutes\"><\/span>\n    <div class=\"smalltext\">Minutes<\/div>\n  <\/div>\n\n  <div><span class=\"seconds\"><\/span>\n    <div class=\"smalltext\">Seconds<\/div>\n  <\/div>\n<\/div>\n";   $(document).ready(function() {        $("body").xiboLayoutScaler(options); $("#content").xiboCountdownRender(options, body); $("#content").find("img").xiboImageRender(options);    }); </script>
+</html>
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ theme.getThemeConfig("theme_title") }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="token" content="{{ csrfToken }}"/>
+    <meta name="public-path" content="{{ theme.rootUri() }}"/>
+    <link rel="shortcut icon" href="{{ theme.uri("img/favicon.ico") }}" />
+
+    <!-- Import CSS bundle from dist -->
+    <script src="{{ theme.rootUri() }}dist/style.bundle.min.js?{{ version }}"></script>
+    <link href="{{ theme.uri("css/captcha.css") }}" rel="stylesheet" media="screen">
+    <script src="{{ theme.uri("libraries/cryptojs-aes.min.js") }}"></script>
+    <script src="{{ theme.uri("libraries/cryptojs-aes-format.js") }}"></script>
+   
+    <style type="text/css">
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+        }
+
+        .form-signin {
+            max-width: 300px;
+            padding: 19px 29px 29px;
+            margin: 0 auto 20px;
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
+        }
+        .form-signin .form-signin-heading,
+        .form-signin .checkbox {
+            margin-bottom: 10px;
+        }
+        .form-signin input[type="text"],
+        .form-signin input[type="password"] {
+            font-size: 16px;
+            height: auto;
+            margin-bottom: 15px;
+            padding: 7px 9px;
+        }
+        .login-logo {
+            width: 200px;
+        }
+
+    </style>
+
+    <!-- Import user made CSS from theme -->
+    <link href="{{ theme.uri("css/override.css") }}?{{ version }}" rel="stylesheet" media="screen">
+</head>
+<body>
+    <div class="container">
+        {% if authCASEnabled %}
+        <form id="cas-login-form" class="form-signin text-center" action="{{ urlFor("cas.login") }}" method="post">
+            <input name="priorRoute" type="hidden" value="{{ flash.priorRoute }}" />
+            <p><img class="login-logo" src="{{ theme.uri("img/xibologo.png") }}"></p>
+
+            <p>{% trans "Connect with the Central Authentication Server" %}</p>
+
+            {% if flash.cas_login_message %}
+            <div class="alert alert-danger">{{ flash.cas_login_message }}</div>
+            {% endif %}
+
+            <p><button class="btn btn-large btn-primary" type="submit" name="logincas">{% trans "CAS Login" %}</button></p>
+        </form>
+        {% else %}
+        <form id="login-form" class="form-signin text-center" action="{{ urlFor("login") }}" method="post">
+            <input name="priorRoute" type="hidden" value="{{ flash.priorRoute }}" />
+            <input type="hidden" name="{{ csrfKey }}" value="{{ csrfToken }}" />
+            <!-- <p><a href="{{ theme.getThemeConfig("theme_url") }}"><img class="login-logo" src="{{ theme.uri("img/xibologo.png") }}"></a></p> -->
+
+            <p><a href="{{ urlFor("home") }}"><img class="login-logo" src="{{ theme.uri("img/xibologo.png") }}"></a></p>
+
+            <p>{% trans "Please provide your credentials" %}</p>
+
+            <input id="username" class="form-control input-block-level" name="username" type="text" placeholder="{% trans "User" %}" autofocus autocomplete="username">
+            <input id="password" class="form-control input-block-level" name="password" type="password" placeholder="{% trans "Password" %}" autocomplete="current-password">
+
+            {% if flash.captcha_code %}
+               <p>Type the characters you see in the picture below.</p>
+               <div class="captcha-code">{{ flash.captcha_code }}</div>
+                <input id="captcha" class="form-control input-block-level" name="captcha" type="text" placeholder="" autocomplete="off" maxlength="5">
+            {% endif %}
+
+            {% if flash.login_message %}
+            <div class="alert alert-danger">{{ flash.login_message }}</div>
+            {% endif %}
+
+            <p><button class="btn btn-large btn-primary" type="submit" onclick="return enct()">{% trans "Login" %}</button></p>
+
+            {% if passwordReminderEnabled %}<p><a href="#" id="reminder-form-toggle">{% trans "Forgotten your password?" %}</a></p>{% endif %}
+        </form>
+        {% endif %}
+
+        {% if passwordReminderEnabled %}
+        <form id="reminder-form" class="form-signin text-center hidden" action="{{ urlFor("login.forgotten") }}" method="post">
+            <input type="hidden" name="{{ csrfKey }}" value="{{ csrfToken }}" />
+
+            <p>{% trans "Please provide your user name" %}</p>
+            <input id="username" class="form-control input-block-level" name="username" type="text" placeholder="{% trans "User" %}">
+
+            {% if flash.login_message %}
+                <div class="alert alert-danger">{{ flash.login_message }}</div>
+            {% endif %}
+
+            <p><button class="btn btn-large btn-primary" type="submit">{% trans "Send Reset" %}</button></p>
+
+            <p><a href="#" id="login-form-toggle">{% trans "Login instead?" %}</a></p>
+        </form>
+        {% endif %}
+
+        <p class="text-center">{% trans %}Version {{ version }}{% endtrans %}</p>
+
+        <!-- <p class="text-center">{% trans %}Version {{ version }}{% endtrans %}
+            | <a id="source-link" href="{{ theme.getThemeConfig("cms_source_url") }}">{% trans "Source" %}</a>
+            | <a id="about-link" class="XiboFormButton" href="{{ urlFor("about") }}" title="{% trans "About" %}">{% trans "About" %}</a>
+        </p>-->
+    </div> <!-- /container -->
+    <!-- Import JS bundle from dist -->
+    <script src="{{ theme.rootUri() }}dist/vendor.bundle.min.js?{{ version }}"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( ".captcha-code" ).click( function(event) {
+                event.stopPropagation();
+                //your code
+            });
+            
+            $(document).on("cut copy paste","#captcha",function(e) {
+                    e.preventDefault();
+            });
+            
+            $(document).on("cut copy paste","#username",function(e) {
+                    e.preventDefault();
+            });
+            
+            $(document).on("cut copy paste","#password",function(e) {
+                    e.preventDefault();
+            });
+                        
+            $("#reminder-form-toggle").on("click", function (e) {
+                e.preventDefault();
+
+                $("#login-form").addClass("hidden");
+                $("#reminder-form").removeClass("hidden");
+            });
+
+            $("#login-form-toggle").on("click", function (e) {
+                e.preventDefault();
+
+                $("#login-form").removeClass("hidden");
+                $("#reminder-form").addClass("hidden");
+            });
+        });
+
+        function enct() {   
+            var valueToEncrypt = document.getElementById('password').value;
+            var pd = 'ubie1mh5l416h';
+            let encodedString = CryptoJSAesJson.encrypt(valueToEncrypt, pd);
+            document.getElementById("password").value = encodedString;
+        }
+    </script>
+</body>
+</html>

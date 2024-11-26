@@ -1,0 +1,32 @@
+{#
+/*
+ * Spring Signage Ltd - http://www.springsignage.com
+ * Copyright (C) 2017 Spring Signage Ltd
+ * (notification-designer-javascript.twig)
+ */
+#}
+<script type="text/javascript">
+
+
+    // Runs after form opens
+    function notificationview_form_edit_open() {
+        
+        // Set duration field, using the helper ()
+        formHelpers.setupCheckboxInputFields($(this).find('form'), '#useDuration', '.duration-fields');
+
+        // Set effect type input field, using the helper ()
+        formHelpers.setupObjectValueInputFields($(this).find('form'), '#effect', ['.effect-controls'], ['none'], true);
+
+        // Setup editors
+        formHelpers.setupDualTypeTextArea(this, 'template', !$(this).data('formEditorOnly'));
+        formHelpers.setupDualTypeTextArea(this, 'noDataMessage');
+    }
+
+    // Runs before form submit
+    function notificationview_form_edit_submit() {        
+
+        // Update text callback fields
+        formHelpers.updateCKEditor();
+    }
+    
+</script>

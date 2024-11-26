@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[[ViewPortWidth]]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <style type="text/css">.image img { width:100%;}.cycle-overlay {color: white;background: black;opacity: .6;filter: alpha(opacity=60);position: absolute;bottom: 0;width: 100%;padding: 15px;text-align:center;}</style><link href="fonts.css" rel="stylesheet" media="screen"><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script><script type="text/javascript" src="xibo-layout-scaler.js"></script><script type="text/javascript" src="xibo-text-render.js"></script><script type="text/javascript" src="xibo-image-render.js"></script><script type="text/javascript">   var options = {"type":"ticker","fx":"none","duration":5,"durationIsPerItem":false,"numItems":10,"takeItemsFrom":"start","reverseOrder":0,"itemsPerPage":0,"randomiseItems":0,"speed":2,"originalWidth":"953","originalHeight":"887"};   var items = ["<div class=\"image\"><img src=\"ticker_b98a38d5d58855526f144487111dfbe3\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Liveblog corona | Belgi\u00eb wil mogelijk uitstel tweede inenting<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_faf268ab69f79fc37499a986776d66a0\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Bijna evenveel supermarkten open op Nieuwjaarsdag als op Eerste Kerstdag<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_2a248d6e8fea0b72efb76102a174237e\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Vier jaar celstraf voor Chinese burgerjournalist na berichtgeving in Wuhan<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_f9103b5592c8326c5081fc4bbee69500\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Trump zet alsnog handtekening onder gigantisch coronasteunpakket<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_eac55d7c0307273bb2a33c52560b6766\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Video | Politie Nashville geeft nieuwe beelden camperexplosie vrij<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_16add52767230ed389c431f0abf85240\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Federer is nog niet fit genoeg en meldt zich af voor Australian Open<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_7276787d090657afe09685b6851a4b60\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Podcast | 'Trump zet in laatste maand haast achter uitvoer federale executies'<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_81005b578f71827dea535aed904e27b8\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Verdachte van ontploffing camper Nashville overleden bij incident<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_b6e03cb73c5696d0ea9908e2f3328c11\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">'Ministerie nog niet begonnen met aanleg extra medicijnvoorraad'<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_2ce73b1ca9bdcfd89f55ada185ad3e03\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Weerbericht: Wisselend bewolkt met soms een bui<\/p><\/div><\/div>","<span id=\"copyright\">https:\/\/www.ed.gov<\/span>"];   $(document).ready(function() {        $("body").xiboLayoutScaler(options); if(items != false) { $("#content").xiboTextRender(options, items); } $("#content").find("img").xiboImageRender(options);    }); </script>
+</html>
+<!-- NUMITEMS=10 -->
+<!-- DURATION=5 -->

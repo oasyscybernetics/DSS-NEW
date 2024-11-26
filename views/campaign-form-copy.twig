@@ -1,0 +1,33 @@
+{#
+/*
+ * Oasys Digital Signage
+ * 
+ * 
+ */
+#}
+
+{% extends "form-base.twig" %}
+{% import "forms.twig" as forms %}
+
+{% block formTitle %}
+    {% set name = campaign.campaign %}
+    {% trans %}Copy {{ name }}{% endtrans %}
+{% endblock %}
+
+{% block formButtons %}
+    {% trans "Cancel" %}, XiboDialogClose()
+    {% trans "Save" %}, $("#campaignCopyForm").submit()
+{% endblock %}
+
+{% block formHtml %}
+    <div class="row">
+        <div class="col-md-12">
+            <form id="campaignCopyForm" class="XiboForm form-horizontal" method="post" action="{{ urlFor("campaign.copy", {id: campaign.campaignId}) }}">
+                {% set title %}{% trans "Name" %}{% endset %}
+                {% set helpText %}{% trans "The Name for this Campaign" %}{% endset %}
+                {% set name %}{{ campaign.campaign }} 2{% endset %}
+                {{ forms.input("name", title, name, helpText,"","required") }}
+            </form>
+        </div>
+    </div>
+{% endblock %}

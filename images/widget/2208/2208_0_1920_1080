@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1920" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    <link href="/web/library/fontcss" rel="stylesheet" media="screen" />
+
+    
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript">var options = {"originalWidth":"1920","originalHeight":"1080","fx":"scrollHorz","duration":60,"durationIsPerItem":false,"numItems":0,"takeItemsFrom":"start","itemsPerPage":0}; var items = [{"startDate":"2021-02-10T09:30:00+05:30","endDate":"2021-02-10T18:30:00+05:30","item":"<h1 style=\"font-size: 48px; color: rgb(255, 240, 245); text-align: center;\"><big>Title - Party<\/big><\/h1>\r\n\r\n<h1 style=\"font-size: 48px; color: rgb(255, 240, 245); text-align: center;\"><big>Decription - Christmass Celebration<\/big><\/h1>\r\n\r\n<h1 style=\"font-size: 48px; color: rgb(255, 240, 245); text-align: center;\"><big>Location -&nbsp; Chennai, Tamil Nadu, India<\/big><\/h1>\r\n\r\n<h1 style=\"font-size: 48px; color: rgb(255, 240, 245); text-align: center;\"><big>2021-02-10 09:30 \/ 2021-02-10 18:30<\/big><\/h1>\r\n","currentEventItem":"<h1 style=\"font-size: 48px; color: rgb(255, 240, 245); text-align: center;\"><big>Title - Party<\/big><\/h1>\r\n\r\n<h1 style=\"font-size: 48px; color: rgb(255, 240, 245); text-align: center;\"><big>Decription - Christmass Celebration<\/big><\/h1>\r\n\r\n<h1 style=\"font-size: 48px; color: rgb(255, 240, 245); text-align: center;\"><big>Location -&nbsp; Chennai, Tamil Nadu, India<\/big><\/h1>\r\n\r\n<h1 style=\"font-size: 48px; color: rgb(255, 240, 245); text-align: center;\"><big>2021-02-10 09:30 \/ 2021-02-10 18:30<\/big><\/h1>\r\n"},{"startDate":0,"endDate":"2022-02-10T11:42:05+05:30","item":"<span style=\"font-size: 48px; color:#ffffff;\">No Data returned from the source<\/span>","currentEventItem":"<span style=\"font-size: 48px; color:#ffffff;\">No Data returned from the source<\/span>","noDataMessage":1}];</script>
+<script type="text/javascript" src="/web/library/download/3?preview=1"></script>
+<script type="text/javascript" src="/web/library/download/4?preview=1"></script>
+<script type="text/javascript" src="/web/library/download/5?preview=1"></script>
+<script type="text/javascript" src="/web/library/download/12?preview=1"></script>
+<script type="text/javascript" src="/web/library/download/6?preview=1"></script>
+<script type="text/javascript">
+                $(document).ready(function() {
+                    var excludeCurrent = false;
+                    var parsedItems = [];
+                    var now = moment();
+                
+                    // Prepare the items array, sorting it and removing any items that have expired.
+                    $.each(items, function(index, element) {
+                        // Parse the item and add it to the array if it has not finished yet
+                        var endDate = moment(element.endDate);
+                        
+                        // If its the no data message element and the item array already have some elements
+                        // -> Skip that last element
+                        if(parsedItems.length > 0 && element.noDataMessage === 1) {
+                            return true;
+                        }
+                        
+                        if (endDate.isAfter(now)) {
+                            if (moment(element.startDate).isBefore(now)) {
+                                // This is a currently active event - do we want to add or exclude these?
+                                if (!excludeCurrent) {
+                                    parsedItems.push(element.currentEventItem);
+                                }
+                            } else {
+                                parsedItems.push(element.item);
+                            }
+                        }
+                    });
+                
+                    $("body").find("img").xiboImageRender(options);
+                    $("body").xiboLayoutScaler(options);
+                    $("#content").xiboTextRender(options, parsedItems);
+                });
+            </script>
+<script type="text/javascript" src="/web/library/download/8?preview=1"></script>
+
+</html>
+

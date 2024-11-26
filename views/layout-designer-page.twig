@@ -1,0 +1,102 @@
+{#
+/*
+ * Spring Signage Ltd - http://www.springsignage.com
+ * Copyright (C) 2018 Spring Signage Ltd
+ * (${FILE_NAME})
+ */
+#}
+
+{% extends "authed.twig" %}
+{% import "inline.twig" as inline %}
+
+{% block pageContent %}
+
+    <!-- Editor structure -->
+    <div id="layout-editor" data-layout-id="{{ layout.layoutId }}"></div>
+
+    <div class="loading-overlay">
+        <i class="fa fa-spinner fa-spin loading-icon"></i>
+    </div>
+
+{% endblock %}
+
+    {% block javaScript %} 
+        {# Add common file #}
+        {% include "common.twig" %}
+
+        <script src="{{ theme.rootUri() }}dist/layoutDesigner.bundle.min.js?{{ version }}"></script>
+        <script src="{{ theme.rootUri() }}dist/playlistEditor.bundle.min.js?{{ version }}"></script>
+        <script type="text/javascript">
+
+            {# Custom translations #}
+            {% autoescape "js" %}
+                {# Insert custom translations here #}
+                var layoutDesignerTrans = {
+                    publishTitle: "{% trans "Publish layout" %}",
+                    discardTitle: "{% trans "Discard layout" %}",
+                    publishMessage: "{% trans "Are you sure you want to publish this Layout? If it is already in use the update will automatically get pushed." %}",
+                    checkoutTitle: "{% trans "Checkout" %}",
+                    scheduleTitle: "{% trans "Schedule Now" %}",
+                    saveTemplateTitle: "{% trans "Save Template" %}",
+                    readOnlyModeTitle: "{% trans "Read Only Mode" %}",
+                    readOnlyModeMessage: "{% trans "You are viewing this Layout in read only mode, checkout by clicking on this message or from the Actions menu above!" %}",
+                    checkoutMessage: "{% trans "Layout is not editable, please checkout!" %}",
+                    viewModeTitle: "{% trans "View" %}",
+                    regionEditModeMessage: "{% trans "Editing Regions" %}",
+                    welcomeModalMessage: "{% trans "This Layout is Published and cannot be edited. You can checkout the Layout for editing below, or continue to view it in a read only mode." %}"
+                };
+
+                var viewerTrans = {
+                    inlineEditor: "{% trans "Inline Editor" %}",
+                    toggleFullscreen: "{% trans "Toggle Fullscreen Mode" %}",
+                    backToLayout: "{% trans "Go back to Layout view" %}",
+                    saveEditorChanges: "{% trans "Save editor changes" %}",
+                    playPreviewLayout: "{% trans "Play Layout preview" %}",
+                    editLayout: "{% trans "Edit Layout" %}",
+                    stopPreviewLayout: "{% trans "Stop Layout preview" %}",
+                    nextWidget: "{% trans "Next widget" %}",
+                    previousWidget: "{% trans "Previous widget" %}"
+                };
+
+                var timelineTrans = {
+                    zoomIn: "{% trans "Zoom in" %}",
+                    zoomOut: "{% trans "Zoom out" %}",
+                    resetZoom: "{% trans "Reset zoom" %}",
+                    zoomDelta: "{% trans "Visible area time span" %}",
+                    hiddenTimeruler: "{% trans "Zoom out to see timeruler!" %}",
+                    zoomFindSelected: "{% trans "Scroll to selected widget" %}",
+                    startTime: "{% trans "Visible area start time" %}",
+                    endTime: "{% trans "Visible area end time" %}",
+                    layoutName: "{% trans "Layout name" %}",
+                    layoutDuration: "{% trans "Layout duration" %}",
+                    layoutDimensions: "{% trans "Layout dimensions" %}",
+                    emptyRegion: "{% trans "Empty Region" %}",
+                    addToThisPosition: "{% trans "Add to this position" %}",
+                    hiddenContentInWidget: "{% trans "Zoom in to see more details!" %}",
+                };
+
+                var navigatorTrans = {
+                    edit: "{% trans "Edit layout regions" %}",
+                    addRegion: "{% trans "Add" %}",
+                    addRegionDesc: "{% trans "Add a new region" %}",
+                    deleteRegion: "{% trans "Delete region" %}",
+                    toggleFullscreen: "{% trans "Toggle Fullscreen Mode" %}",
+                    undo: "{% trans "Undo" %}",
+                    undoDesc: "{% trans "Revert last change" %}",
+                    close: "{% trans "Close" %}",
+                    closeDesc: "{% trans "Return to Layout View" %}",
+                    save: "{% trans "Save" %}",
+                    saveDesc: "{% trans "Save changes" %}"
+                };
+            {% endautoescape %}
+        </script>
+
+        {% for module in modules %}
+            {% if module.layoutDesignerJavaScript() != "" %}
+                {% include module.layoutDesignerJavaScript() ~ ".twig" %}
+            {% endif %}
+        {% endfor %}
+
+        {% include "region-designer-javascript.twig" %}
+
+    {% endblock %}

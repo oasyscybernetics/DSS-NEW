@@ -1,0 +1,32 @@
+{#
+/*
+ * Oasys Digital Signage
+ * 
+ * 
+ */
+#}
+
+{% extends "form-base.twig" %}
+{% import "forms.twig" as forms %}
+
+{% block formTitle %}
+    {% set name = layout.layout %}
+    {% trans %} Layout {{ name }} {% endtrans %}
+{% endblock %}
+
+{% block formButtons %}
+    {% trans "Cancel" %}, XiboDialogClose()
+    {% trans "Save" %}, $("#layoutSetEnableStatForm").submit()
+{% endblock %}
+
+{% block formHtml %}
+    <div class="row">
+        <div class="col-md-12">
+            <form id="layoutSetEnableStatForm" class="XiboForm form-horizontal" method="put" action="{{ urlFor("layout.setenablestat", {input: "enableStat", id: layout.layoutId}) }}">
+                {% set title %}{% trans "Enable Stats Collection?" %}{% endset %}
+                {% set helpText %}{% trans "Enable the collection of Proof of Play statistics for the selected Layout." %}{% endset %}
+                {{ forms.checkbox("enableStat", title, layout.enableStat, helpText) }}
+            </form>
+        </div>
+    </div>
+{% endblock %}

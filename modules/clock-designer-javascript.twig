@@ -1,0 +1,50 @@
+{#
+/*
+ * Spring Signage Ltd - http://www.springsignage.com
+ * Copyright (C) 2017 Spring Signage Ltd
+ * (notification-designer-javascript.twig)
+ */
+#}
+<script type="text/javascript">
+
+    // Runs after form opens
+    function clock_form_edit_open() {
+
+        // Set duration field, using the helper ()
+        formHelpers.setupCheckboxInputFields($(this).find('form'), '#useDuration', '.duration-fields');
+
+        // Set clock type input field, using the helper ()
+        formHelpers.setupObjectValueInputFields($(this), '#clockTypeId', ['.analogue-control-group', '.digital-control-group', '.flip-control-group'], [1, 2, 3]);
+
+        // Setup editors
+        formHelpers.setupDualTypeTextArea(this, 'ta_text', !$(this).data('formEditorOnly'), '[' + jsTimeFormat + ']');
+
+        // For the clock type, we need to check if it's not digital, and destroy the inline editor for that specific case
+        const self = this;
+        const clockTypeChangeBehaviour = function(form) {
+            if(!$(self).data('formEditorOnly')) {
+                if($(form).find('form #clockTypeId').val() !== '2') {
+                    $(form).data().viewerObject.setupInlineEditor('ta_text', false);
+                } else {
+                    let isChecked = $(form).find('#ta_text_advanced').is(':checked');
+                    $(form).data().viewerObject.setupInlineEditor('ta_text', isChecked);
+                }
+            }
+        };
+
+        // On select input change, check clock type
+        $(this).find('form #clockTypeId').on('change input', () => {
+            clockTypeChangeBehaviour($(this));
+        });
+
+        clockTypeChangeBehaviour($(this));
+    }
+
+    // Runs before form submit
+    function clock_form_edit_submit() {  
+
+        // Update text callback fields
+        formHelpers.updateCKEditor();
+    }
+
+</script>

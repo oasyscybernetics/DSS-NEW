@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[[ViewPortWidth]]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    
+            <link href="fonts.css" rel="stylesheet" media="screen">
+            <link href="bootstrap.min.css" rel="stylesheet" media="screen">
+            <link href="emojione.sprites.css" rel="stylesheet" media="screen">
+        <style type="text/css"> body { background-color: transparent }</style><style type="text/css">.emojione {
+    width: 26px;
+    height: 26px
+}
+
+.item {
+    float: left;
+}
+
+.tweet {
+    height: 130px;
+    padding: 10px;
+}
+
+.twitter-container {
+    width: 1000px !important;
+    height: 900px !important;
+    font-size: 25px;
+    line-height: 1.3;
+    font-family: lucida sans unicode, lucida grande, sans-serif;
+    padding-top: 10px;
+}
+
+div.profileimage {
+    width: 90px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+div.profileimage img {
+    width: 90px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #ecf0f1;
+    position: relative;
+}
+
+div.message-container {
+    width: 870px;
+    height: inherit;
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.message-container .user {
+    height: 30px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: .2em;
+    color: #95a5a6;
+    padding: 10px;
+}
+
+.message-container .date {
+    padding: 10px;
+    float: right;
+    height: 30px;
+}
+
+.message-container .photo {
+    text-align: center;
+    height: auto;
+    max-height: 690px;
+    overflow: hidden;
+}
+
+.message-container .photo img {
+    width: 100%;
+    height: auto !important;
+    vertical-align: middle;
+}
+
+.message {
+    width: 100%;
+    padding: 10px;
+    background-color: #ecf0f1;
+    position: relative;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    text-align: left;
+    display: inline-block;
+    max-height: 880px;
+}</style><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script><script type="text/javascript" src="jquery-cycle-2.1.6.min.js"></script><script type="text/javascript" src="xibo-layout-scaler.js"></script><script type="text/javascript" src="xibo-text-render.js"></script><script type="text/javascript" src="xibo-image-render.js"></script><script type="text/javascript">   var options = {"type":"twitter","fx":"noAnim","speed":500,"duration":60,"durationIsPerItem":false,"numItems":5,"originalWidth":"1920","originalHeight":"1080","widgetDesignPadding":"0","widgetDesignWidth":"1000","widgetDesignHeight":"900","itemsPerPage":5};   var items = ["<div class=\"twitter-container\">\r\n<div class=\"profileimage\"><img src=\"twitter_16866061\"  \/><\/div>\r\n\r\n<div class=\"message-container\">\r\n<div class=\"message\">\r\n<div class=\"user\"><span>Sanjeev<\/span><\/div>\r\n\r\n<div class=\"date\"><span>2021-02-10 16:00<\/span><\/div>\r\n\r\n<div class=\"tweet\"><span>Edapaddi happy annachi. <span class=\"emojione-1F600\" title=\":grinning:\">\ud83d\ude00<\/span>  <\/span><\/div>\r\n\r\n<div class=\"photo\"><img src=\"twitter_photo_16866061_1359449594778689536\"  \/><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitter-container\">\r\n<div class=\"profileimage\"><img src=\"twitter_3248503542\"  \/><\/div>\r\n\r\n<div class=\"message-container\">\r\n<div class=\"message\">\r\n<div class=\"user\"><span>patrikai.com<\/span><\/div>\r\n\r\n<div class=\"date\"><span>2021-02-09 19:11<\/span><\/div>\r\n\r\n<div class=\"tweet\"><span>\u0ba4\u0bae\u0bbf\u0bb4\u0b95\u0bae\u0bcd \u0b85\u0bae\u0bc8\u0ba4\u0bbf \u0baa\u0bc2\u0b99\u0bcd\u0b95\u0bbe\u0bb5\u0bbe\u0b95 \u0ba4\u0bbf\u0b95\u0bb4\u0bcd\u0b95\u0bbf\u0bb1\u0ba4\u0bc1: \u0bb0\u0bbe\u0ba3\u0bbf\u0baa\u0bcd\u0baa\u0bc7\u0b9f\u0bcd\u0b9f\u0bc8 \u0ba4\u0bc7\u0bb0\u0bcd\u0ba4\u0bb2\u0bcd \u0baa\u0bbf\u0bb0\u0b9a\u0bcd\u0b9a\u0bbe\u0bb0\u0ba4\u0bcd\u0ba4\u0bbf\u0bb2\u0bcd \u0b8e\u0b9f\u0baa\u0bcd\u0baa\u0bbe\u0b9f\u0bbf \u0baa\u0bc7\u0b9a\u0bcd\u0b9a\u0bc1\n <\/span><\/div>\r\n\r\n<div class=\"photo\"><img src=\"twitter_photo_3248503542_1359135386975412230\"  \/><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitter-container\">\r\n<div class=\"profileimage\"><img src=\"twitter_3248503542\"  \/><\/div>\r\n\r\n<div class=\"message-container\">\r\n<div class=\"message\">\r\n<div class=\"user\"><span>patrikai.com<\/span><\/div>\r\n\r\n<div class=\"date\"><span>2021-02-08 20:09<\/span><\/div>\r\n\r\n<div class=\"tweet\"><span>\u0b89\u0ba4\u0bcd\u0ba4\u0bb0\u0b95\u0bbe\u0ba3\u0bcd\u0b9f\u0bcd \u0bae\u0bbe\u0ba8\u0bbf\u0bb2\u0ba4\u0bcd\u0ba4\u0bbf\u0bb1\u0bcd\u0b95\u0bc1 \u0b89\u0ba4\u0bb5\u0bbf\u0b95\u0bb3\u0bcd \u0bb5\u0bb4\u0b99\u0bcd\u0b95 \u0ba4\u0bae\u0bbf\u0bb4\u0b95 \u0b85\u0bb0\u0b9a\u0bc1 \u0ba4\u0baf\u0bbe\u0bb0\u0bcd: \u0bae\u0bc1\u0ba4\u0bb2\u0bae\u0bc8\u0b9a\u0bcd\u0b9a\u0bb0\u0bcd \u0b8e\u0b9f\u0baa\u0bcd\u0baa\u0bbe\u0b9f\u0bbf \u0baa\u0bb4\u0ba9\u0bbf\u0b9a\u0bbe\u0bae\u0bbf\n <\/span><\/div>\r\n\r\n<div class=\"photo\"><img src=\"twitter_photo_3248503542_1358787587868004353\"  \/><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitter-container\">\r\n<div class=\"profileimage\"><img src=\"twitter_3248503542\"  \/><\/div>\r\n\r\n<div class=\"message-container\">\r\n<div class=\"message\">\r\n<div class=\"user\"><span>patrikai.com<\/span><\/div>\r\n\r\n<div class=\"date\"><span>2021-02-07 14:33<\/span><\/div>\r\n\r\n<div class=\"tweet\"><span>\u0bb5\u0bbf\u0bb5\u0b9a\u0bbe\u0baf\u0bbf\u0b95\u0bb3\u0bbf\u0ba9\u0bcd \u0ba4\u0bc1\u0ba9\u0bcd\u0baa\u0bae\u0bcd \u0b87\u0baa\u0bcd\u0baa\u0bcb\u0ba4\u0bc1 \u0ba4\u0bbe\u0ba9\u0bcd \u0bae\u0bc1\u0ba4\u0bb2\u0bcd\u0bb5\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1 \u0ba4\u0bc6\u0bb0\u0bbf\u0b95\u0bbf\u0bb1\u0ba4\u0bbe? \u0ba4\u0bc6\u0ba9\u0bcd\u0b95\u0bbe\u0b9a\u0bbf \u0baa\u0bbf\u0bb0\u0b9a\u0bcd\u0b9a\u0bbe\u0bb0\u0ba4\u0bcd\u0ba4\u0bbf\u0bb2\u0bcd \u0bb8\u0bcd\u0b9f\u0bbe\u0bb2\u0bbf\u0ba9\u0bcd \u0b95\u0bc7\u0bb3\u0bcd\u0bb5\u0bbf\n <\/span><\/div>\r\n\r\n<div class=\"photo\"><img src=\"twitter_photo_3248503542_1358340534771720195\"  \/><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitter-container\">\r\n<div class=\"profileimage\"><img src=\"twitter_921953995089887232\"  \/><\/div>\r\n\r\n<div class=\"message-container\">\r\n<div class=\"message\">\r\n<div class=\"user\"><span>Kathii Ben<span class=\"emojione-1F52A\" title=\":knife:\">\ud83d\udd2a<\/span><span class=\"emojione-1F52A\" title=\":knife:\">\ud83d\udd2a<\/span><span class=\"emojione-1F52A\" title=\":knife:\">\ud83d\udd2a<\/span><\/span><\/div>\r\n\r\n<div class=\"date\"><span>2021-02-05 14:11<\/span><\/div>\r\n\r\n<div class=\"tweet\"><span>Adicha adi apdi!! Pona maasam sonaru stalin!!! Indha maasam aiyo yemma nu Edapaddi thallupadi panraru!! Suya budhi erukadhu pola!!! Anywayss public ku therium!!! Vetri nicchayam @arivalayam <\/span><\/div>\r\n\r\n<div class=\"photo\"><img src=\"twitter_photo_921953995089887232_1357610229882519553\"  \/><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n"];   $(document).ready(function() {        $("body").xiboLayoutScaler(options); $("#content").xiboTextRender(options, items); $("img").xiboImageRender(options);   }); </script>
+</html>
+<!-- NUMITEMS=1 -->
+<!-- DURATION=60 -->

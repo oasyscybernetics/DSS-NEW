@@ -1,0 +1,202 @@
+{#
+/*
+ * Spring Signage Ltd - http://www.springsignage.com
+ * Copyright (C) 2015 Spring Signage Ltd
+ * (${FILE_NAME})
+ */
+
+#}
+{% extends "authed.twig" %}
+{% import "inline.twig" as inline %}
+
+{% block actionMenu %}
+    <ul class="nav nav-pills pull-right">
+        <li class="btn btn-info btn-xs"><a class="XiboFormButton btns" title="{% trans "Add a new Display Settings Profile" %}" href="{{ urlFor("displayProfile.add.form") }}"> <i class="fa fa-cogs" aria-hidden="true"></i> {% trans "Add Profile" %}</a></li>
+    </ul>
+{% endblock %}
+
+{% block pageContent %}
+    <div class="widget">
+        <div class="widget-title">{% trans "Display Setting Profiles" %}</div>
+        <div class="widget-body">
+            <div class="XiboGrid" id="{{ random() }}">
+                <div class="XiboFilter well">
+                    <div class="FilterDiv" id="Filter">
+                        <form class="form-inline">
+
+                            <div class="form-group ">
+                                <label class="control-label" title="" for="displayProfile" accesskey="">{% trans "Name" %}</label>
+                                <div>
+                                    <div class="input-group">
+                                        <input class="form-control" name="displayProfile" type="text" id="displayProfile" value="">
+                                        <span class="input-group-addon">
+                                            <input title="{% trans "Use Regex?" %}" type="checkbox" id="useRegexForName" name="useRegexForName">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {% set title %}{% trans "Type" %}{% endset %}
+                            {% set android %}{% trans "Android" %}{% endset %}
+                            {% set windows %}{% trans "Windows" %}{% endset %}
+                            {% set webos %}{% trans "webOS" %}{% endset %}
+                            {% set sssp %}{% trans "Tizen" %}{% endset %}
+                            {% set linux %}{% trans "Linux" %}{% endset %}
+                            {% set options = [
+                                { optionid: "", option: "" },
+                                { optionid: "android", option: android},
+                                { optionid: "windows", option: windows},
+                                { optionid: "lg", option: webos},
+                                { optionid: "sssp", option: sssp},
+                                { optionid: "linux", option: linux},
+                            ] %}
+                            {{ inline.dropdown("type", "single", title, "", options, "optionid", "option") }}
+
+                        </form>
+                    </div>
+                </div>
+                <div class="XiboData">
+                    <table id="displayProfiles" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>{% trans "Name" %}</th>
+                                <th>{% trans "Type" %}</th>
+                                <th>{% trans "Default" %}</th>
+                                <th>{% trans "Row Menu" %}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javaScript %}
+    <script type="text/javascript">
+        var table = $("#displayProfiles").DataTable({ "language": dataTablesLanguage,
+            serverSide: true, stateSave: true, stateDuration: 0,
+            stateLoadCallback: function (settings, callback) {
+                var data = {};
+                $.ajax({
+                    type: "GET",
+                    async: false,
+                    url: "{{ urlFor("user.pref") }}?preference=displayProfileGrid",
+                    dataType: 'json',
+                    success: function (json) {
+                        try {
+                            if (json.success) {
+                                data = JSON.parse(json.data.value);
+                            }
+                        } catch (e) {
+                            // Do nothing
+                        }
+                    }
+                });
+                return data;
+            },
+            stateSaveCallback: function (settings, data) {
+                $.ajax({
+                    type: "POST",
+                    url: "{{ urlFor("user.pref") }}",
+                    data: {
+                        preference: [{
+                            option: "displayProfileGrid",
+                            value: JSON.stringify(data)
+                        }]
+                    }
+                });
+            },
+            filter: false,
+            searchDelay: 3000,
+            "order": [[ 1, "asc"]],
+            ajax: {
+                "url": "{{ urlFor("displayProfile.search") }}",
+                "data": function(d) {
+                    $.extend(d, $("#displayProfiles").closest(".XiboGrid").find(".FilterDiv form").serializeObject());
+                }
+            },
+            "columns": [
+                { "data": "name", "render": dataTableSpacingPreformatted },
+                { "data": "type" },
+                { "data": "isDefault", "render": dataTableTickCrossColumn },
+                {
+                    "orderable": false,
+                    "data": dataTableButtonsColumn
+                }
+            ]
+        });
+
+        table.on('draw', dataTableDraw);
+        table.on('processing.dt', dataTableProcessing);
+        dataTableAddButtons(table, $('#displayProfiles_wrapper').find('.col-sm-6').eq(1));
+
+        // Custom submit for display profile form
+        function displayProfileEditFormSubmit() {
+            let $form = $("#displayProfileForm");
+
+            // Remove temp fields and enable checkbox after submit
+            $form.submit(function(event) {
+                event.preventDefault();
+
+                // Re-enable checkboxes
+                $form.find('input[type="checkbox"]').each(function () {
+                    // Enable checkbox
+                    $(this).attr('disabled', false);
+                });
+
+                // Remove temp input fields
+                $form.find('input.temp-input').each(function () {
+                    $(this).remove();
+                });
+            });
+
+            // Replace all checkboxes with hidden input fields
+            $form.find('input[type="checkbox"]').each(function () {
+                // Get checkbox values
+                let value = $(this).is(':checked') ? 'on' : 'off';
+                let id = $(this).attr('id');
+
+                // Create hidden input
+                $('<input type="hidden" class="temp-input">')
+                    .attr('id', id)
+                    .attr('name', id)
+                    .val(value)
+                    .appendTo($(this).parent());
+
+                // Disable checkbox so it won't be submitted
+                $(this).attr('disabled', true);
+            });
+
+            // Submit form
+            $form.submit();
+        }
+
+        // Custom submit for display profile form
+        function displayProfileEditFormSubmit() {
+            let $form = $("#displayProfileForm");
+
+            // Replace all checkboxes with hidden input fields
+            $form.find('input[type="checkbox"]').each(function () {
+                // Get checkbox values
+                let value = $(this).is(':checked') ? 'on' : 'off';
+                let id = $(this).attr('id');
+
+                // Create hidden input
+                $('<input type="hidden">')
+                    .attr('id', id)
+                    .attr('name', id)
+                    .val(value)
+                    .appendTo($(this).parent());
+
+                // Disable checkbox so it won't be submitted
+                $(this).attr('disabled', true);
+            });
+
+            $form.submit();
+        }
+    </script>
+{% endblock %}

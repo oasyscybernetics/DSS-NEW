@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[[ViewPortWidth]]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <style type="text/css">.image img { width:100%;}.cycle-overlay {color: white;background: black;opacity: .6;filter: alpha(opacity=60);position: absolute;bottom: 0;width: 100%;padding: 15px;text-align:center;}</style><link href="fonts.css" rel="stylesheet" media="screen"><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script><script type="text/javascript" src="jquery-cycle-2.1.6.min.js"></script><script type="text/javascript" src="xibo-layout-scaler.js"></script><script type="text/javascript" src="xibo-text-render.js"></script><script type="text/javascript" src="xibo-image-render.js"></script><script type="text/javascript">   var options = {"type":"ticker","fx":"shuffle","duration":5,"durationIsPerItem":false,"numItems":15,"takeItemsFrom":"start","reverseOrder":0,"itemsPerPage":0,"randomiseItems":0,"speed":2,"originalWidth":"1920","originalHeight":"1080"};   var items = ["<div class=\"image\"><img src=\"ticker_2184d50fe7dcc48af0e050276eef0ed9\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Livestream | Kuipers geeft update over coronasituatie in ziekenhuizen<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_b396280b6f963eade777369f62a4f8c6\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">De Boer over EK-kansen Robben: 'Op dit moment sluit ik het uit'<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_8cad3b0d228a9f8adb3748b0429d79a0\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Besluit over versoepelingen per 18 mei uitgesteld tot volgende week maandag<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_2f64c0e5033e2ba9ecb241295dc504da\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Liveblog corona | Bezetting op ic's voor vijfde dag op rij afgenomen<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_321dbab92e5d9609464e3473b5477d58\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Vakanties naar Portugal en de Balearen vanaf zaterdag waarschijnlijk weer mogelijk<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_0b4e27069457728b30b47417e80626d6\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">OM eist elf maanden tegen oud-officier voor betaalde seks met minderjarige<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_403490f8b01c67dcf0eaaedaa69c9c65\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Vrouw en kinderen PSV'er Zahavi bedreigd met vuurwapen, monden afgeplakt<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_c32932c139129bfea5f797c82cd2aecd\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Honderden gewonden bij aanhoudende confrontaties bij moskee in Jeruzalem<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_ef8db91e2659ba8ff46610940211a83d\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">RIVM vervangt complete leiding van vaccinatieprogramma<\/p><\/div><\/div>","<div class=\"image\"><img src=\"ticker_609fa9edf7c332493277f10ec4430b6b\"  \/><div class=\"cycle-overlay\"><p style=\"font-family: Arial, Verdana, sans-serif; font-size:48px; color:#Color#;\">Vermiste arts die Russische oppositieleider Navalny behandelde weer terecht<\/p><\/div><\/div>","<span id=\"copyright\">https:\/\/www.ed.gov<\/span>"];   $(document).ready(function() {        $("body").xiboLayoutScaler(options); if(items != false) { $("#content").xiboTextRender(options, items); } $("#content").find("img").xiboImageRender(options);    }); </script>
+</html>
+<!-- NUMITEMS=11 -->
+<!-- DURATION=5 -->

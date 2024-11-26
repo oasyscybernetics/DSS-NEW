@@ -1,0 +1,60 @@
+[2023-09-01 16:32:09] INSTALL.INFO: Installer Step 1 [] {"uid":"d8442eb","method":"GET","route":"/1"}
+[2023-09-01 16:32:12] INSTALL.INFO: Installer Step 1 [] {"uid":"ddd5a40","method":"GET","route":"/1"}
+[2023-09-01 16:32:12] INSTALL.INFO: Installer Step 1 [] {"uid":"4850a9d","method":"GET","route":"/1"}
+[2023-09-01 16:32:12] INSTALL.INFO: Installer Step 1 [] {"uid":"9bb8b3e","method":"GET","route":"/1"}
+[2023-09-01 16:32:12] INSTALL.INFO: Installer Step 1 [] {"uid":"119f7c1","method":"GET","route":"/1"}
+[2023-09-01 16:32:13] INSTALL.INFO: Installer Step 1 [] {"uid":"e765891","method":"GET","route":"/1"}
+[2023-09-01 16:32:40] INSTALL.INFO: Installer Step 1 [] {"uid":"ae6ea7e","method":"GET","route":"/1"}
+[2023-09-01 17:01:22] INSTALL.INFO: Installer Step 1 [] {"uid":"2476133","method":"GET","route":"/1"}
+[2023-09-01 17:01:30] INSTALL.INFO: Installer Step 1 [] {"uid":"91fa637","method":"GET","route":"/1"}
+[2023-09-04 12:11:27] INSTALL.INFO: Installer Step 1 [] {"uid":"329ffa4","method":"GET","route":"/"}
+[2023-09-04 12:11:30] INSTALL.INFO: Installer Step 1 [] {"uid":"63ec10b","method":"GET","route":"/1"}
+[2023-09-04 12:11:31] INSTALL.INFO: Installer Step 2 [] {"uid":"e023899","method":"GET","route":"/2"}
+[2023-09-04 12:11:44] INSTALL.INFO: Installer Step 3 [] {"uid":"362a03e","method":"POST","route":"/3"}
+[2023-09-04 12:11:44] INSTALL.INFO: Setting unlimited max execution time. [] {"uid":"362a03e","method":"POST","route":"/3"}
+[2023-09-04 12:11:47] INSTALL.INFO: Installer Step 4 [] {"uid":"6a47af3","method":"GET","route":"/4"}
+[2023-09-04 12:11:58] INSTALL.INFO: Installer Step 5 [] {"uid":"e0f5f56","method":"POST","route":"/5"}
+[2023-09-04 12:11:58] INSTALL.INFO: Installer Step 6 [] {"uid":"f7c18d9","method":"GET","route":"/6"}
+[2023-09-04 12:12:05] INSTALL.INFO: Installer Step 7 [] {"uid":"80bca70","method":"POST","route":"/7"}
+[2023-09-04 12:12:05] INSTALL.INFO: Installation Complete. Redirecting to /login [] {"uid":"80bca70","method":"POST","route":"/7"}
+[2023-09-27 11:11:00] INSTALL.INFO: Installer Step 1 [] {"uid":"dd84556","method":"GET","route":"/"}
+[2023-09-27 11:11:06] INSTALL.INFO: Installer Step 1 [] {"uid":"1f982f0","method":"GET","route":"/"}
+[2023-09-27 11:34:58] INSTALL.INFO: Installer Step 1 [] {"uid":"5c38205","method":"GET","route":"/"}
+[2023-09-27 12:28:32] INSTALL.INFO: Installer Step 1 [] {"uid":"0b4517c","method":"GET","route":"/"}
+[2023-09-27 12:35:57] INSTALL.INFO: Installer Step 1 [] {"uid":"0e50cd9","method":"GET","route":"/"}
+[2023-09-27 12:45:21] INSTALL.INFO: Installer Step 1 [] {"uid":"e5ac55e","method":"GET","route":"/"}
+[2023-09-27 12:45:25] INSTALL.INFO: Installer Step 1 [] {"uid":"f4b5dd7","method":"GET","route":"/"}
+[2023-10-06 17:25:06] INSTALL.INFO: Installer Step 1 [] {"uid":"e6ef0c5","method":"GET","route":"/"}
+[2023-10-06 17:25:11] INSTALL.INFO: Installer Step 1 [] {"uid":"8b968dd","method":"GET","route":"/"}
+[2023-10-06 17:27:20] INSTALL.INFO: Installer Step 1 [] {"uid":"1e9d1ce","method":"GET","route":"/"}
+[2023-10-06 17:27:21] INSTALL.INFO: Installer Step 1 [] {"uid":"42e1b5b","method":"GET","route":"/"}
+[2023-10-06 17:27:23] INSTALL.INFO: Installer Step 2 [] {"uid":"0051700","method":"GET","route":"/2"}
+[2023-10-06 17:28:08] INSTALL.INFO: Installer Step 3 [] {"uid":"9c25d51","method":"POST","route":"/3"}
+[2023-10-06 17:28:08] INSTALL.INFO: Setting unlimited max execution time. [] {"uid":"9c25d51","method":"POST","route":"/3"}
+[2023-10-06 17:28:08] INSTALL.ERROR: Installation Exception on Step 3: Could not connect to MySQL with the administrator details. Please check and try again. Error Message = [SQLSTATE[HY000] [2054] The server requested authentication method unknown to the client] [] {"uid":"9c25d51","method":"POST","route":"/3"}
+[2023-10-06 17:28:18] INSTALL.INFO: Installer Step 3 [] {"uid":"092af09","method":"POST","route":"/3"}
+[2023-10-06 17:28:18] INSTALL.INFO: Setting unlimited max execution time. [] {"uid":"092af09","method":"POST","route":"/3"}
+[2023-10-06 17:28:18] INSTALL.ERROR: Installation Exception on Step 3: Could not connect to MySQL with the administrator details. Please check and try again. Error Message = [SQLSTATE[HY000] [1045] Access denied for user 'anbu'@'localhost' (using password: YES)] [] {"uid":"092af09","method":"POST","route":"/3"}
+[2023-10-06 17:28:35] INSTALL.INFO: Installer Step 3 [] {"uid":"3797a8c","method":"POST","route":"/3"}
+[2023-10-06 17:28:35] INSTALL.INFO: Setting unlimited max execution time. [] {"uid":"3797a8c","method":"POST","route":"/3"}
+[2023-10-06 17:28:38] INSTALL.INFO: Installer Step 4 [] {"uid":"d2a5c8f","method":"GET","route":"/4"}
+[2023-10-06 17:28:43] INSTALL.INFO: Installer Step 5 [] {"uid":"4903914","method":"POST","route":"/5"}
+[2023-10-06 17:28:43] INSTALL.INFO: Installer Step 6 [] {"uid":"2f4b3d6","method":"GET","route":"/6"}
+[2023-10-06 17:30:05] INSTALL.INFO: Installer Step 7 [] {"uid":"df0daf5","method":"POST","route":"/7"}
+[2023-10-06 17:30:05] INSTALL.INFO: Installation Complete. Redirecting to /login [] {"uid":"df0daf5","method":"POST","route":"/7"}
+[2024-05-31 10:03:50] INSTALL.INFO: Installer Step 1 [] {"uid":"de7fbd1","method":"GET","route":"/"}
+[2024-05-31 10:05:39] INSTALL.INFO: Installer Step 1 [] {"uid":"f9617a7","method":"GET","route":"/"}
+[2024-05-31 10:05:41] INSTALL.INFO: Installer Step 1 [] {"uid":"5d0833d","method":"GET","route":"/1"}
+[2024-05-31 10:05:43] INSTALL.INFO: Installer Step 2 [] {"uid":"df2f93f","method":"GET","route":"/2"}
+[2024-05-31 10:06:42] INSTALL.INFO: Installer Step 3 [] {"uid":"3bcdfeb","method":"POST","route":"/3"}
+[2024-05-31 10:06:42] INSTALL.INFO: Setting unlimited max execution time. [] {"uid":"3bcdfeb","method":"POST","route":"/3"}
+[2024-05-31 10:06:42] INSTALL.ERROR: Installation Exception on Step 3: Could not connect to MySQL with the administrator details. Please check and try again. Error Message = [SQLSTATE[HY000] [1698] Access denied for user 'root'@'localhost'] [] {"uid":"3bcdfeb","method":"POST","route":"/3"}
+[2024-05-31 10:07:53] INSTALL.INFO: Installer Step 3 [] {"uid":"3eb78d8","method":"POST","route":"/3"}
+[2024-05-31 10:07:53] INSTALL.INFO: Setting unlimited max execution time. [] {"uid":"3eb78d8","method":"POST","route":"/3"}
+[2024-05-31 10:07:56] INSTALL.INFO: Installer Step 4 [] {"uid":"abfdafe","method":"GET","route":"/4"}
+[2024-05-31 10:08:06] INSTALL.INFO: Installer Step 5 [] {"uid":"72b0e9b","method":"POST","route":"/5"}
+[2024-05-31 10:08:06] INSTALL.INFO: Installer Step 6 [] {"uid":"4c194e9","method":"GET","route":"/6"}
+[2024-05-31 10:08:35] INSTALL.INFO: Installer Step 7 [] {"uid":"c26c654","method":"POST","route":"/7"}
+[2024-05-31 10:08:35] INSTALL.ERROR: Installation Exception on Step 7: The Library Location you gave is not writable by the webserver. Please fix the permissions and try again. [] {"uid":"c26c654","method":"POST","route":"/7"}
+[2024-05-31 10:09:09] INSTALL.INFO: Installer Step 7 [] {"uid":"6956305","method":"POST","route":"/7"}
+[2024-05-31 10:09:09] INSTALL.INFO: Installation Complete. Redirecting to /cms_ubi_new/web/login [] {"uid":"6956305","method":"POST","route":"/7"}

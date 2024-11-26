@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=549" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    
+            <link href="/library/download/25?preview=1" rel="stylesheet" media="screen">
+            <link href="/library/download/29?preview=1" rel="stylesheet" media="screen">
+            <link href="/library/download/28?preview=1" rel="stylesheet" media="screen">
+            <link href="/library/download/27?preview=1" rel="stylesheet" media="screen">
+            <style type="text/css"> body { background-color: transparent }</style>
+            <style type="text/css">
+                body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1;
+}
+
+.container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 540px !important;
+    height: 540px !important;
+}
+
+.main-panel {
+    margin-top: 74px;
+    height: 137px;
+}
+
+.big-icon {
+    font-size: 200px;
+    color: #fff;
+}
+
+.date {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Helvetica", sans-serif;
+    font-weight: light;
+    padding-bottom: 1px;
+}
+
+.month {
+    font-size: 15px;
+    color: #fff;
+    font-family: "Helvetica", sans-serif;
+    font-weight: light;
+}
+
+.current-temp {
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    color: #fff;
+}
+
+.main-cont {
+    width: 400px;
+    color: #fff;
+    padding: 90px 50px;
+    position: relative;
+}
+
+.main-icon {
+    font-size: 70px;
+    color: #fff;
+}
+
+.summary {
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.powered {
+    font-weight: light;
+    font-size: 15px;
+    padding-bottom: 40px;
+}
+
+.small-day {
+    padding-top: 50px;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.small-icon {
+    font-size: 130px;
+    padding: 20px 0px 40px 0px;
+    color: #fff;
+}
+
+.big-temp {
+    padding-top: 20px;
+    font-size: 120px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.even {
+    background-color: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.odd {
+    background-color: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff !important;
+}
+
+.details-box {
+    height: 290px;
+    padding-left: 30px;
+    color: #272625;
+}
+
+.upcoming-days {
+    height: 365px;
+    text-align: center;
+    color: #fff;
+}
+
+.selector-day {
+    font-size: 15px;
+    font-weight: light;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.selector-temp {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(0, 0, 0, 0.8);
+    margin-left: 120px;
+}
+
+.row-details {
+    margin-top: 128px;
+    background-color: #fff;
+    height: 182px;
+    color: #fff;
+}
+
+.row-day {
+    padding: 30px 0px;
+    border-bottom: #eee solid 1px;
+    color: #000;
+}
+
+.day {
+    font-size: 30px;
+    font-weight: bold;
+    color: #434343;
+}
+
+.temp {
+    font-size: 30px;
+    font-weight: light;
+    color: #434343;
+}
+
+.icon-up {
+    font-size: 30px;
+    color: color: #434343;
+}
+
+.row-time {
+    padding: 20px 0px 10px 0px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.shadowed {
+    text-shadow: 0px 0px 2px #111;
+    filter: dropshadow(color=#111, offx=2, offy=2);
+}
+
+.bg-cloudy {
+    background-image: url('/library/download/35?preview=1');
+}
+
+.bg-partly-cloudy-day {
+    background-image: url('/library/download/36?preview=1');
+}
+
+.bg-clear-day {
+    background-image: url('/library/download/37?preview=1');
+}
+
+.bg-fog {
+    background-image: url('/library/download/38?preview=1');
+}
+
+.bg-sleet {
+    background-image: url('/library/download/39?preview=1');
+}
+
+.bg-clear-night {
+    background-image: url('/library/download/40?preview=1');
+}
+
+.bg-partly-cloudy-night {
+    background-image: url('/library/download/41?preview=1');
+}
+
+.bg-rain {
+    background-image: url('/library/download/42?preview=1');
+}
+
+.bg-snow {
+    background-image: url('/library/download/43?preview=1');
+}
+
+.bg-wind {
+    background-image: url('/library/download/44?preview=1');
+}
+            </style>
+        <link href="/library/fontcss" rel="stylesheet" media="screen"><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"><div class="bg-div bg-partly-cloudy-day container">
+  <div class="row main-cont center-block">
+      <div class="col-xs-12 upcoming-days">
+          <div class="small-icon shadowed"><i class="wi wi-day-cloudy"></i></div>
+          <div class="summary shadowed">Broken clouds</div>
+          <div class="big-temp shadowed">11ºC</div>
+          <div class="powered shadowed">Powered by OpenWeather</div>
+      </div>
+  </div>
+</div></div>
+</body>
+<script type="text/javascript" src="/library/download/3?preview=1"></script><script type="text/javascript" src="/library/download/5?preview=1"></script><script type="text/javascript" src="/library/download/12?preview=1"></script><script>
+
+            var options = {"originalWidth":"549","originalHeight":"676","widgetDesignWidth":"540","widgetDesignHeight":"540"}
+
+            $(document).ready(function() {
+                $("body").xiboLayoutScaler(options);
+                $("#content").find("img").xiboImageRender(options);
+            });
+        </script>
+</html>
+

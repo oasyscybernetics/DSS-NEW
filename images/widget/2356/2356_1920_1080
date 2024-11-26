@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[[ViewPortWidth]]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    
+            <link href="fonts.css" rel="stylesheet" media="screen">
+            <link href="bootstrap.min.css" rel="stylesheet" media="screen">
+            <link href="emojione.sprites.css" rel="stylesheet" media="screen">
+        <style type="text/css"> body { background-color: transparent }</style><style type="text/css">.item {
+    float: left;
+}
+
+.emojione {
+    width: 10px;
+    height: 10px
+}
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1;
+}
+
+.nopic {
+    height: 160px !important;
+    width: 400px !important;
+    float: left;
+    border: 1px solid #ddd;
+}
+
+.twitpic {
+    height: 450px !important;
+    width: 400px !important;
+    float: left;
+    border: 1px solid #ddd;
+    background: #FFF;
+}
+
+.main-tweet {
+    font-size: 14px;
+    padding: 30px;
+    line-height: 140%;
+    color: #434343;
+    height: 112px;
+    text-align: justify;
+}
+
+.mainpic {
+    height: 300px;
+    width: 400px;
+}
+
+.mainpic img {
+    display: block;
+    width: 400px;
+    clip: rect(0px, 398px, 299px, 0px);
+    position: absolute;
+}
+
+.footer {
+    background: #1da1f2;
+    width: 100%;
+    height: 37px;
+}
+
+.user {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 9px;
+    letter-spacing: 1px;
+    padding-left: 0px;
+}</style><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script><script type="text/javascript" src="jquery-cycle-2.1.6.min.js"></script><script type="text/javascript" src="xibo-layout-scaler.js"></script><script type="text/javascript" src="xibo-text-render.js"></script><script type="text/javascript" src="xibo-image-render.js"></script><script type="text/javascript">   var options = {"type":"twitter","fx":"noAnim","speed":500,"duration":60,"durationIsPerItem":false,"numItems":15,"originalWidth":"1920","originalHeight":"1080","widgetDesignPadding":"10","widgetDesignWidth":"400","widgetDesignHeight":"450","itemsPerPage":2};   var items = ["<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1162902314161623040_1391996580199206915\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @TheDhoniEra: Scott Styris on Captain Dhoni <span class=\"emojione-1F60E\" title=\":sunglasses:\">\ud83d\ude0e<\/span><span class=\"emojione-1F525\" title=\":fire:\">\ud83d\udd25<\/span>\n\n@MSDhoni \u2022 #MSDhoni  \u2022 #WhistlePodu <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@SREE__offl<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_926290327920447493_1391763737011363843\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @BleedDhonism: Latest pic of MS Dhoni with Mr and Mrs @robbieuthappa \n\n#MSDhoni #Dhoni <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@IAMJRJAMADAR<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_926290327920447493_1391976447149965317\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @imnotVkohli: Players appearing most times in ICC ODI Team of the year : \n\nMs Dhoni      - 8\nAbDeVilliers  - 7\nVirat Kohli     - 6 <span class=\"emojione-1F451\" title=\":crown:\">\ud83d\udc51<\/span>\nRicky Ponting \/ Rohit Sharma - 5\n\nThis Trio \u2763\ufe0f <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@IAMJRJAMADAR<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1344918365995814912_1391996580199206915\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @TheDhoniEra: Scott Styris on Captain Dhoni <span class=\"emojione-1F60E\" title=\":sunglasses:\">\ud83d\ude0e<\/span><span class=\"emojione-1F525\" title=\":fire:\">\ud83d\udd25<\/span>\n\n@MSDhoni \u2022 #MSDhoni  \u2022 #WhistlePodu <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@20sDEVADAS<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_2994126992_1392001649510658049\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @Thatsrainaforu: Whenever Dhoni,yuvraj, Raina were part of succesful chase \n\nRaina - Runs - 985    Avg - 82.08 sr - 97.23\n\nDhoni -.  Runs -1251 avg - 104.25 sr-  96.90\n\nYuvraj - Runs - 1142. Avg -49.65 sr - 81.68\n\nBest Middle order trio ever <span class=\"emojione-2764\" title=\":heart:\">\u2764\ufe0f<\/span><span class=\"emojione-2764\" title=\":heart:\">\u2764\ufe0f<\/span><span class=\"emojione-2764\" title=\":heart:\">\u2764\ufe0f<\/span>\n@ImRaina @msdhoni @YUVSTRONG12 <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@ONLYCSKMATTERS<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_465431049_1391996580199206915\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @TheDhoniEra: Scott Styris on Captain Dhoni <span class=\"emojione-1F60E\" title=\":sunglasses:\">\ud83d\ude0e<\/span><span class=\"emojione-1F525\" title=\":fire:\">\ud83d\udd25<\/span>\n\n@MSDhoni \u2022 #MSDhoni  \u2022 #WhistlePodu <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@deepika_9595<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_852241059967008774_1391996580199206915\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @TheDhoniEra: Scott Styris on Captain Dhoni <span class=\"emojione-1F60E\" title=\":sunglasses:\">\ud83d\ude0e<\/span><span class=\"emojione-1F525\" title=\":fire:\">\ud83d\udd25<\/span>\n\n@MSDhoni \u2022 #MSDhoni  \u2022 #WhistlePodu <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@pavan_ec<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1336705834558967808_1392001649510658049\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @Thatsrainaforu: Whenever Dhoni,yuvraj, Raina were part of succesful chase \n\nRaina - Runs - 985    Avg - 82.08 sr - 97.23\n\nDhoni -.  Runs -1251 avg - 104.25 sr-  96.90\n\nYuvraj - Runs - 1142. Avg -49.65 sr - 81.68\n\nBest Middle order trio ever <span class=\"emojione-2764\" title=\":heart:\">\u2764\ufe0f<\/span><span class=\"emojione-2764\" title=\":heart:\">\u2764\ufe0f<\/span><span class=\"emojione-2764\" title=\":heart:\">\u2764\ufe0f<\/span>\n@ImRaina @msdhoni @YUVSTRONG12 <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@hiyamsdian<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1185895295927799809_1392020339215851522\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @Hitmann452: Then Ganguly had Sachin\nand Dhoni had Kohli\n\nNow Kohli had Rohit <span class=\"emojione-1F4A5\" title=\":boom:\">\ud83d\udca5<\/span>\n\n@ImRo45 #RohitSharma <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@karthickvengat7<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_947820348455632896_1391739846780014595\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @TheDhoniEra: \"When your team needs to make a Comeback, You need a Strong Captain like MS Dhoni.\u201d - Parthiv Patel \ud83e\udd81<span class=\"emojione-1F525\" title=\":fire:\">\ud83d\udd25<\/span>\n\n@msdhoni \u2022 #MSDhoni \u2022 #WhistlePodu <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@magesh78943<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_455738106_1391759098459217923\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @i_m_mukul_sahu: A thread on MS DHONI :- THE WICKETKEEPER <span class=\"emojione-1F525\" title=\":fire:\">\ud83d\udd25<\/span><span class=\"emojione-2764\" title=\":heart:\">\u2764\ufe0f<\/span>\n\nA DEADLY SHADOW BEHIND THE BATSMAN'S BACK !!! <span class=\"emojione-1F525\" title=\":fire:\">\ud83d\udd25<\/span><span class=\"emojione-1F480\" title=\":skull:\">\ud83d\udc80<\/span> <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@Azarsaifallah<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_926290327920447493_1391759098459217923\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @i_m_mukul_sahu: A thread on MS DHONI :- THE WICKETKEEPER <span class=\"emojione-1F525\" title=\":fire:\">\ud83d\udd25<\/span><span class=\"emojione-2764\" title=\":heart:\">\u2764\ufe0f<\/span>\n\nA DEADLY SHADOW BEHIND THE BATSMAN'S BACK !!! <span class=\"emojione-1F525\" title=\":fire:\">\ud83d\udd25<\/span><span class=\"emojione-1F480\" title=\":skull:\">\ud83d\udc80<\/span> <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@IAMJRJAMADAR<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1141680341037416449_1391759098459217923\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @i_m_mukul_sahu: A thread on MS DHONI :- THE WICKETKEEPER <span class=\"emojione-1F525\" title=\":fire:\">\ud83d\udd25<\/span><span class=\"emojione-2764\" title=\":heart:\">\u2764\ufe0f<\/span>\n\nA DEADLY SHADOW BEHIND THE BATSMAN'S BACK !!! <span class=\"emojione-1F525\" title=\":fire:\">\ud83d\udd25<\/span><span class=\"emojione-1F480\" title=\":skull:\">\ud83d\udc80<\/span> <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@its_Bunny__7<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1292460976587984896_1392019255617417221\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @msdfansofficial: Killer Smile <span class=\"emojione-1F601\" title=\":grin:\">\ud83d\ude01<\/span>\n\n#MSDhoni #Dhoni <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@Pravin82170092<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_3101246522_1392019255617417221\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @msdfansofficial: Killer Smile <span class=\"emojione-1F601\" title=\":grin:\">\ud83d\ude01<\/span>\n\n#MSDhoni #Dhoni <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@Jaidevvv<\/div>\r\n<\/div>\r\n<\/div>\r\n"];   $(document).ready(function() {        $("body").xiboLayoutScaler(options); $("#content").xiboTextRender(options, items); $("img").xiboImageRender(options);   }); </script>
+</html>
+<!-- NUMITEMS=8 -->
+<!-- DURATION=60 -->

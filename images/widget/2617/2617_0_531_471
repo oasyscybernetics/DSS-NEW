@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=531" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <link href="/web/library/fontcss" rel="stylesheet" media="screen">
+        <link href="/web/library/download/25?preview=1" rel="stylesheet" media="screen"><style type="text/css"> body { background-color: transparent }</style><style type="text/css">body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1;
+}
+
+.container-main {
+    height: 420px !important;
+    width: 820px !important;
+}
+
+.container {
+    height: 420px !important;
+    width: 820px !important;
+    float: left;
+    margin-top: 20px;
+}
+
+.row-finance {
+    height: 60px;
+    background: rgba(0, 0, 0, 0.87);
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row-header {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 20px;
+}
+
+#cycle-container {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.value {
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.down-arrow {
+    font-size: 20px;
+    color: red;
+    padding-top: 17px;
+}
+
+.up-arrow {
+    font-size: 20px;
+    color: green;
+    padding-top: 17px;
+}
+
+.variant {
+    font-size: 20px;
+    padding-top: 17px;
+}
+
+.flags {
+    padding-top: 4px;
+}
+
+.center-block {
+    width: 50px;
+    height: 50px;
+}</style><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="/web/library/download/3?preview=1"></script><script type="text/javascript" src="/web/library/download/8?preview=1"></script><script type="text/javascript" src="/web/library/download/5?preview=1"></script><script type="text/javascript" src="/web/library/download/24?preview=1"></script><script type="text/javascript" src="/web/library/download/12?preview=1"></script><script type="text/javascript">   var options = {"type":"currencies","fx":"none","speed":500,"duration":30,"durationIsPerPage":false,"numItems":3,"originalWidth":"531","originalHeight":"471","widgetDesignWidth":"820","widgetDesignHeight":"420","maxItemsPerPage":4};   var items = ["<div class=\"row row-finance\">\r\n    <div class=\"col-xs-1 flags\">\r\n        <img class=\"img-circle center-block \" src=\"\/web\/library\/download\/269?preview=1\"\">\r\n    <\/div>\r\n    <div class=\"col-xs-3 value \">GBP<\/div>\r\n    <div class=\"col-xs-2 col-xs-offset-6 text-center value\">0.7262<\/div>\r\n<\/div>","<div class=\"row row-finance\">\r\n    <div class=\"col-xs-1 flags\">\r\n        <img class=\"img-circle center-block \" src=\"\/web\/library\/download\/270?preview=1\"\">\r\n    <\/div>\r\n    <div class=\"col-xs-3 value \">USD<\/div>\r\n    <div class=\"col-xs-2 col-xs-offset-6 text-center value\">1<\/div>\r\n<\/div>","<div class=\"row row-finance\">\r\n    <div class=\"col-xs-1 flags\">\r\n        <img class=\"img-circle center-block \" src=\"\/web\/library\/download\/271?preview=1\"\">\r\n    <\/div>\r\n    <div class=\"col-xs-3 value \">EUR<\/div>\r\n    <div class=\"col-xs-2 col-xs-offset-6 text-center value\">0.8526<\/div>\r\n<\/div>"];   var body = "<div class=\"container-main\">\r\n    <div class=\"container \">\r\n        <div class=\"row row-header\">\r\n            <div class=\"col-xs-2 col-xs-offset-10 text-center value\">RATE<\/div>\r\n        <\/div>\r\n        <div id=\"cycle-container\">\r\n            [itemsTemplate]\r\n        <\/div>\r\n    <\/div>\r\n<\/div>";   $(document).ready(function() {        $("body").xiboLayoutScaler(options); $("#content").xiboFinanceRender(options, items, body); $("#content").find("img").xiboImageRender(options);    }); </script>
+</html>
+<!-- NUMITEMS=1 -->
+<!-- DURATION=30 -->

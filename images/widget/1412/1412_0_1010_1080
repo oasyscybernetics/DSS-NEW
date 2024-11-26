@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1010" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <link href="/library/fontcss" rel="stylesheet" media="screen"><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="/library/download/3?preview=1"></script><script type="text/javascript" src="/library/download/5?preview=1"></script><script type="text/javascript" src="/library/download/6?preview=1"></script><script type="text/javascript" src="/library/download/12?preview=1"></script><script type="text/javascript">   var options = {"type":"datasetticker","fx":"none","duration":10,"durationIsPerItem":false,"takeItemsFrom":"start","itemsPerPage":0,"randomiseItems":0,"speed":2,"originalWidth":"1010","originalHeight":"1080"};   var items = ["<span style=\"font-size: 48px; color:#ffffff;\">Monday\r\nMorning\r\n30<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Monday\r\nAfternoon\r\n25<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Monday\r\nEvening\r\n45<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Tuesday\r\nMorning\r\n24<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Tuesday\r\nAfternoon\r\n15<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Tuesday\r\nEvening\r\n35<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Wednesday\r\nMorning\r\n30<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Wednesday\r\nAfternoon\r\n15<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Wednesday\r\nEvening\r\n35<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Thursday\r\nMorning\r\n20<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Thursday\r\nAfternoon\r\n12<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Thursday\r\nEvening\r\n24<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Saturday\r\nMorning\r\n14<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Saturday\r\nAfternoon\r\n7<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Saturday\r\nEvening\r\n24<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Sunday\r\nMorning\r\n25<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Sunday\r\nAfternoon\r\n24<\/span>","<span style=\"font-size: 48px; color:#ffffff;\">Sunday\r\nEvening\r\n35<\/span>"];   $(document).ready(function() {        $("body").xiboLayoutScaler(options); $("#content").xiboTextRender(options, items); $("#content").find("img").xiboImageRender(options);    }); </script>
+</html>
+<!-- NUMITEMS=18 -->
+<!-- DURATION=10 -->

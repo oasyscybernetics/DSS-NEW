@@ -1,0 +1,1 @@
+let Change=function(t,e,i,h,a,s){this.id=t,this.type=e,this.target={id:h,type:i},this.oldState=a,this.newState=s,this.timeStamp=Math.round((new Date).getTime()/1e3),this.uploaded=!1,this.uploading=!1};module.exports=Change;

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[[ViewPortWidth]]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <link href="fonts.css" rel="stylesheet" media="screen">
+        <link href="bootstrap.min.css" rel="stylesheet" media="screen"><style type="text/css"> body { background-color: transparent }</style><style type="text/css">body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1;
+}
+
+.container-main {
+    height: 380px !important;
+    width: 500px !important;
+}
+
+.container {
+    width: 500px !important;
+    height: 380px !important;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.value {
+    font-size: 20px;
+    padding-top: 10px;
+    color: #000;
+}
+
+.value-currency {
+    font-size: 45px;
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.value-up {
+    color: green;
+    font-weight: bold
+}
+
+.value-down {
+    color: red;
+    font-weight: bold
+}
+
+.value-equal {
+    color: gray;
+    font-weight: bold
+}
+
+.variant {
+    font-size: 20px;
+    padding-top: 17px;
+}
+
+.flags {
+    padding-top: 4px;
+}
+
+.live-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.time-title {
+    font-size: 14px;
+    padding-top: 10;
+}
+
+.name-stock {
+    color: gray;
+}
+
+.name {
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.subname {
+    color: gray;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.total {
+    margin-top: 30px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.subtotal {
+    display: inline-block;
+}
+
+.down-arrow {
+    margin: 0px 0px 10px 0px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid red;
+}
+
+.up-arrow {
+    margin: 0px 0px 10px 0px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid green;
+}
+
+.right-arrow {
+    margin: 0px 0px 0px 10px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid gray;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+
+.logo {
+    height: 40px;
+}</style><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script><script type="text/javascript" src="jquery-cycle-2.1.6.min.js"></script><script type="text/javascript" src="xibo-layout-scaler.js"></script><script type="text/javascript" src="xibo-finance-render.js"></script><script type="text/javascript" src="xibo-image-render.js"></script><script type="text/javascript">   var options = {"type":"stocks","fx":"none","speed":500,"duration":30,"durationIsPerPage":false,"numItems":5,"originalWidth":"971","originalHeight":"1080","widgetDesignWidth":500,"widgetDesignHeight":380,"maxItemsPerPage":1};   var items = ["<div class=\"row\">\r\n    <div class=\"col-xs-12 name\">GOOGL<\/div>\r\n    <div class=\"col-xs-12 subname\">GOOGL<\/div>\r\n    <div class=\"col-xs-12 value-currency\">1726.22 <\/div>\r\n    <div class=\"col-xs-12 total\">\r\n        <div class=\"subtotal value-down\">-1.14%<\/div>\r\n        <div class=\"subtotal down-arrow\"><\/div>\r\n    <\/div>\r\n<\/div>","<div class=\"row\">\r\n    <div class=\"col-xs-12 name\">NVDA<\/div>\r\n    <div class=\"col-xs-12 subname\">NVDA<\/div>\r\n    <div class=\"col-xs-12 value-currency\">530.88 <\/div>\r\n    <div class=\"col-xs-12 total\">\r\n        <div class=\"subtotal value-down\">-0.8%<\/div>\r\n        <div class=\"subtotal down-arrow\"><\/div>\r\n    <\/div>\r\n<\/div>","<div class=\"row\">\r\n    <div class=\"col-xs-12 name\">AMZN<\/div>\r\n    <div class=\"col-xs-12 subname\">AMZN<\/div>\r\n    <div class=\"col-xs-12 value-currency\">3201.65 <\/div>\r\n    <div class=\"col-xs-12 total\">\r\n        <div class=\"subtotal value-down\">-1.31%<\/div>\r\n        <div class=\"subtotal down-arrow\"><\/div>\r\n    <\/div>\r\n<\/div>","<div class=\"row\">\r\n    <div class=\"col-xs-12 name\"><\/div>\r\n    <div class=\"col-xs-12 subname\"><\/div>\r\n    <div class=\"col-xs-12 value-currency\"> <\/div>\r\n    <div class=\"col-xs-12 total\">\r\n        <div class=\"subtotal value-equal\">0%<\/div>\r\n        <div class=\"subtotal right-arrow\"><\/div>\r\n    <\/div>\r\n<\/div>","<div class=\"row\">\r\n    <div class=\"col-xs-12 name\">SBI<\/div>\r\n    <div class=\"col-xs-12 subname\">SBI<\/div>\r\n    <div class=\"col-xs-12 value-currency\">9.23 <\/div>\r\n    <div class=\"col-xs-12 total\">\r\n        <div class=\"subtotal value-down\">-0.11%<\/div>\r\n        <div class=\"subtotal down-arrow\"><\/div>\r\n    <\/div>\r\n<\/div>"];   var body = "<div class=\"container-main\">\r\n    <div class=\"container \">\r\n        <div id=\"cycle-container\">\r\n            [itemsTemplate]\r\n        <\/div>\r\n    <\/div>\r\n<\/div>";   $(document).ready(function() {        $("body").xiboLayoutScaler(options); $("#content").xiboFinanceRender(options, items, body); $("#content").find("img").xiboImageRender(options);    }); </script>
+</html>
+<!-- NUMITEMS=5 -->
+<!-- DURATION=150 -->

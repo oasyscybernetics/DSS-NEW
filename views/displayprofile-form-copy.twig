@@ -1,0 +1,33 @@
+{#
+/*
+ * Oasys Digital Signage
+ * 
+ * 
+ */
+#}
+
+{% extends "form-base.twig" %}
+{% import "forms.twig" as forms %}
+
+{% block formTitle %}
+    {% set name = displayProfile.name %}
+    {% trans %}Copy {{ name }}{% endtrans %}
+{% endblock %}
+
+{% block formButtons %}
+    {% trans "Cancel" %}, XiboDialogClose()
+    {% trans "Save" %}, $("#displayProfileCopyForm").submit()
+{% endblock %}
+
+{% block formHtml %}
+    <div class="row">
+        <div class="col-md-12">
+            <form id="displayProfileCopyForm" class="XiboForm form-horizontal" method="post" action="{{ urlFor("displayProfile.copy", {id: displayProfile.displayProfileId}) }}">
+                {% set title %}{% trans "Name" %}{% endset %}
+                {% set helpText %}{% trans "The Name for this Display Profile" %}{% endset %}
+                {% set name %}{{ displayProfile.name }} 2{% endset %}
+                {{ forms.input("name", title, name, helpText,"","required") }}
+            </form>
+        </div>
+    </div>
+{% endblock %}

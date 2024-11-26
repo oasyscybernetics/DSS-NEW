@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1920" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    
+            <link href="/web/library/fontcss" rel="stylesheet" media="screen">
+            <link href="/web/library/download/25?preview=1" rel="stylesheet" media="screen">
+            <link href="/web/library/download/47?preview=1" rel="stylesheet" media="screen">
+        <style type="text/css"> body { background-color: transparent }</style><style type="text/css">.item {
+    float: left;
+}
+
+.emojione {
+    width: 10px;
+    height: 10px
+}
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1;
+}
+
+.nopic {
+    height: 160px !important;
+    width: 400px !important;
+    float: left;
+    border: 1px solid #ddd;
+}
+
+.twitpic {
+    height: 450px !important;
+    width: 400px !important;
+    float: left;
+    border: 1px solid #ddd;
+    background: #FFF;
+}
+
+.main-tweet {
+    font-size: 14px;
+    padding: 30px;
+    line-height: 140%;
+    color: #434343;
+    height: 112px;
+    text-align: justify;
+}
+
+.mainpic {
+    height: 300px;
+    width: 400px;
+}
+
+.mainpic img {
+    display: block;
+    width: 400px;
+    clip: rect(0px, 398px, 299px, 0px);
+    position: absolute;
+}
+
+.footer {
+    background: #1da1f2;
+    width: 100%;
+    height: 37px;
+}
+
+.user {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 9px;
+    letter-spacing: 1px;
+    padding-left: 0px;
+}</style><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="/web/library/download/3?preview=1"></script><script type="text/javascript" src="/web/library/download/8?preview=1"></script><script type="text/javascript" src="/web/library/download/5?preview=1"></script><script type="text/javascript" src="/web/library/download/6?preview=1"></script><script type="text/javascript" src="/web/library/download/12?preview=1"></script><script type="text/javascript">   var options = {"type":"twitter","fx":"noAnim","speed":500,"duration":60,"durationIsPerItem":false,"numItems":15,"originalWidth":"1920","originalHeight":"1080","widgetDesignPadding":"10","widgetDesignWidth":"400","widgetDesignHeight":"450","itemsPerPage":5};   var items = ["<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/968\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @CARICOMorg: I thank you Prime Minister Narendra Modi of India\n@narendramodi for your generous contribution of 500,000 doses of COVID-19 vaccines to the Caribbean Community. A tangible expression of goodwill in this challenging time: Amb Irwin LaRocque Secretary-General CARICOM\n#VaccineMaitri <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@AnkitKu13729841<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/969\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">\u0928\u0930\u0947\u0928\u094d\u0926\u094d\u0930 \u092e\u094b\u0926\u0940 \u0928\u0947 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0938\u0947\u0915\u094d\u091f\u0930 \u0915\u0940 \u0935\u0915\u093e\u0932\u0924 \u0915\u0940, \u0915\u0939\u093e-\u0905\u0917\u0930 \u092c\u093e\u092c\u0942 \u0907\u0938 \u0926\u0947\u0936 \u0915\u0947 \u0939\u0948\u0902 \u0924\u094b \u0928\u094c\u091c\u0935\u093e\u0928 \u092d\u0940\n\n\nvia NaMo App <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@PalveShashikant<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/970\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">\u0932\u094b\u0915\u0938\u092d\u093e \u092e\u0947\u0902 \u092a\u0940\u090f\u092e \u092e\u094b\u0926\u0940 \u0928\u0947 \u0915\u0939\u093e- '\u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0938\u0947\u0915\u094d\u091f\u0930 \u0915\u094b \u0917\u093e\u0932\u0940 \u0926\u0947\u0928\u093e \u0905\u092c \u0938\u094d\u0935\u0940\u0915\u093e\u0930\u094d\u092f \u0928\u0939\u0940\u0902 \u0939\u0948', \u091f\u0947\u0932\u093f\u0915\u0949\u092e \u0914\u0930 \u092b\u093e\u0930\u094d\u092e\u093e \u0915\u0940 \u0938\u092b\u0932\u0924\u093e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092c\u0924\u093e\u092f\u093e \n\n\nvia NaMo App <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@GulhaneShyam<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/971\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @ndtvfeed: Canada's Justin Trudeau Discussed \"Recent Protest\" With PM Modi Over Call  <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@ankuryadavcool<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/972\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @KarnailSinghBh2: #\u092a\u092a\u094d\u092a\u0942_\u0938\u0902\u0938\u0926_\u0938\u0947_\u092d\u093e\u0917\u093e\n\nWhen PM Modi starts his speech in Parliament. <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@NEERajrashtra<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/973\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @thirumaofficial: This Government is not functioning as a Government for the people, it is functioning as a Govt for Corporate institutions. People are criticizing; they say that instead of calling it Modi\u2019s Government, we can call it a Govt for Modi\u2019s friends, Adani Government, Ambani Government. <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@DukeSathya<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/974\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @Ninjaroulette1: @theJagmeetSingh @modhaliwal Every single Modi hater needs to understand the philosophy guiding the current political dispensation is \"Vasudhaiva Kutumbakam\" ... world is a family. You can still keep hating Hindus but we will spread our kindness and generosity.. always. Om Shanti  <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@aptweets5<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/975\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @BJPLive: Bengal needs a govt that works with PM Modi and works for the betterment of the poor and needy. \n\nWhile one engine is running in the Centre, you must form another in the state so the double-engine govt will form Sonar Bangla.\n\n- Shri @AmitShah \n\n#PoribortonInBengal <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@AnupamRajak17<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/976\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">#ModiWithFarmers \nAndolanjivis have polluted 'sacred kisan andolan': PM @narendramodi JI \n\n@PMOIndia <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@zahidpatka<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/977\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @vikramjeet_vick: Modi is forcing Twitter to crush the voice of people\n#StandWithTwitterIndia <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@KingBhaiji2<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/978\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @AdvRameshT: When Modi ji started speaking on the form bill in Lok Sabha ..\n\n  Rahul Gandhi and Congress MP:\n\n#\u092a\u092a\u094d\u092a\u0942_\u0938\u0902\u0938\u0926_\u0938\u0947_\u092d\u093e\u0917\u093e \n#\u092a\u092a\u094d\u092a\u0942_\u0938\u0902\u0938\u0926_\u0938\u0947_\u092d\u093e\u0917\u093e<\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@NEERajrashtra<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/979\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @SanghiPrince: Twitter: I won't listen to you, modi.\nModi: You don't have to.\n\n**Bans**\n\nPs: Central government has issued warrant to arrest twitter India officials hour ago.\n\n#BanTwitterInIndia <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@NeerajV08734240<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/980\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">Narendra Modi pitches for private enterprise, says if 'babus' belong to country so do youngsters\n\n\nvia NaMo App <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@Neerajkhasbark1<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/981\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @Lovepre15874853: anything that is danger to modi's dictatorship they are labeling that as anti-national, if this isn't dictatorship  \nThen what it is?  \n#Dictatorship\n#StandWithTwitterIndia\n#BJPGovtDictatingTwitter\n#Stop_Killing_Farmers \n#FarmersProtest \n#deepsidhu <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@PBerogar<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"\/web\/library\/download\/982\/image?preview=1\" \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @DrUjjalMajumde2: Parivartan Yatra is a move against Mamata's rule.Bengal wants change. Modi ji has done justice to people while Mamata disillusioned them. She talks about Maa, Maati Maanush. Maa wasn't respected, Maati wasn't protected, &amp; nothing done for Maanush: @JPNadda #PoribortonYatra <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"\/web\/library\/download\/49?preview=1\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@iSchattopadhyay<\/div>\r\n<\/div>\r\n<\/div>\r\n"];   $(document).ready(function() {        $("body").xiboLayoutScaler(options); $("#content").xiboTextRender(options, items); $("img").xiboImageRender(options);   }); </script>
+</html>
+<!-- NUMITEMS=3 -->
+<!-- DURATION=60 -->

@@ -1,0 +1,49 @@
+{#
+/*
+ * Spring Signage Ltd - http://www.springsignage.com
+ * Copyright (C) 2017 Spring Signage Ltd
+ * (notification-designer-javascript.twig)
+ */
+#}
+<script type="text/javascript">
+
+    // Runs after form opens
+    function forecastio_form_edit_open() {
+        
+        // Set duration field, using the helper ()
+        formHelpers.setupCheckboxInputFields($(this).find('form'), '#useDuration', '.duration-fields');
+
+        // Set display location field, using the helper ()
+        formHelpers.setupCheckboxInputFields($(this).find('form'), '#useDisplayLocation', '', '.locationControls');
+        
+        // Set override template field, using the helper ()
+        formHelpers.setupCheckboxInputFields($(this), '#overrideTemplate', '.template-override-controls, .reloadTemplateButton', '.template-selector-control');
+
+        // Setup editors
+        formHelpers.setupDualTypeTextArea(this, 'currentTemplate');
+        formHelpers.setupDualTypeTextArea(this, 'dailyTemplate');
+
+        // Setup template override
+        formHelpers.setupTemplateOverriding(this, '#overrideTemplate', '#templateId', 
+            {
+                '#currentTemplate': 'main',
+                '#dailyTemplate': 'daily',
+                '#styleSheet': 'css',
+                '#widgetOriginalWidth': 'widgetOriginalWidth',
+                '#widgetOriginalHeight': 'widgetOriginalHeight'
+            });
+
+        // Setupd color picker
+        $(this).find('#color').colorpicker();
+
+        // Tidy up colorpickers on modal close
+        if($(this).hasClass('modal')) {
+            $(this).on("hide.bs.modal", function(e) {
+                if(e.namespace === 'bs.modal') {
+                    // Remove colour pickers
+                    $(this).find("#color").colorpicker('destroy');
+                }
+            });
+        }
+    }
+</script>

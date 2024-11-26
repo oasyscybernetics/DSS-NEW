@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Armalite';
+	src: url('armalite.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.captcha-code {
+	background-color:#FAFBFE;
+	color:#333;
+	font-size:26px;
+	font-family:'Armalite', Arial, Helvetica, sans-serif;
+	padding:10px;
+	letter-spacing:1.1em;
+	
+	background-image: url('dots.jpg');
+	
+	-webkit-user-select: none; /* Safari */
+	  -ms-user-select: none; /* IE 10+ and Edge */
+	  user-select: none; /* Standard syntax */
+}

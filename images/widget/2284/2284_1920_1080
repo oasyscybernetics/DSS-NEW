@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[[ViewPortWidth]]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    
+            <link href="fonts.css" rel="stylesheet" media="screen">
+            <link href="bootstrap.min.css" rel="stylesheet" media="screen">
+            <link href="emojione.sprites.css" rel="stylesheet" media="screen">
+        <style type="text/css"> body { background-color: transparent }</style><style type="text/css">.item {
+    float: left;
+}
+
+.emojione {
+    width: 10px;
+    height: 10px
+}
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1;
+}
+
+.nopic {
+    height: 160px !important;
+    width: 400px !important;
+    float: left;
+    border: 1px solid #ddd;
+}
+
+.twitpic {
+    height: 450px !important;
+    width: 400px !important;
+    float: left;
+    border: 1px solid #ddd;
+    background: #FFF;
+}
+
+.main-tweet {
+    font-size: 14px;
+    padding: 30px;
+    line-height: 140%;
+    color: #434343;
+    height: 112px;
+    text-align: justify;
+}
+
+.mainpic {
+    height: 300px;
+    width: 400px;
+}
+
+.mainpic img {
+    display: block;
+    width: 400px;
+    clip: rect(0px, 398px, 299px, 0px);
+    position: absolute;
+}
+
+.footer {
+    background: #1da1f2;
+    width: 100%;
+    height: 37px;
+}
+
+.user {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 9px;
+    letter-spacing: 1px;
+    padding-left: 0px;
+}</style><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script><script type="text/javascript" src="jquery-cycle-2.1.6.min.js"></script><script type="text/javascript" src="xibo-layout-scaler.js"></script><script type="text/javascript" src="xibo-text-render.js"></script><script type="text/javascript" src="xibo-image-render.js"></script><script type="text/javascript">   var options = {"type":"twitter","fx":"noAnim","speed":500,"duration":60,"durationIsPerItem":false,"numItems":15,"originalWidth":"1920","originalHeight":"1080","widgetDesignPadding":"10","widgetDesignWidth":"400","widgetDesignHeight":"450","itemsPerPage":5};   var items = ["<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_196651629_1359775996413546500\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @HarrisButt_INC: Why is GOI hell bent to support a chinese APP where users data will be under threat?\nMoney is the universal language it seems for Modi sarkaar.\n#ChineseKoo <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@monadoctor<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1336339859003174920_1359792132551135235\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @ashamistri2: Adivasi women of Jhargram aren't safe!\n\nPM Modi sends cheap rice, but Mamata Di fails to send it to people here. 8 people lost their lives due to hunger in Jangal Mahal. This is the current situation in Bengal.\n\n- Shri @JPNadda Ji\n\n#PoribortonYatra <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@16_bjp<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1049525373409603585_1359815424435605504\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @RoshanLalBittu: This youth resentment is a sign of the inundation against the Naveen-Modi government.\n\nThanks to Students Colleagues &amp; Jajpur @NSUI, Odisha for making successful the #YuvaAakroshRally against the Anti-Youth policies of Both Central &amp; State Government. #MyLeaderRahulGandhi <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@ShafakSheikhINC<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1316666248143335424_1359738105398349824\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @MoneycontrolH: #TwitterHypocrisy \u0905\u092e\u0947\u0930\u093f\u0915\u093e \u092e\u0947\u0902 \u0938\u0916\u094d\u0924\u0940 \u0926\u093f\u0916\u093e\u0928\u0947 \u0935\u093e\u0932\u093e @Twitter \u092d\u093e\u0930\u0924 \u092e\u0947\u0902 \u0939\u093f\u0902\u0938\u093e \u0914\u0930 \u091d\u0942\u0920 \u092b\u0948\u0932\u093e\u0928\u0947 \u0935\u093e\u0932\u0947 \u0905\u0915\u093e\u0909\u0902\u091f\u094d\u0938 \u092a\u0930 \u0915\u093e\u0930\u094d\u0930\u0935\u093e\u0908 \u0928\u0939\u0940\u0902 \u0915\u0930\u0915\u0947 \u092d\u093e\u0930\u0924\u0940\u092f \u0938\u0902\u0935\u093f\u0927\u093e\u0928 \u0915\u0940 \u0905\u0928\u0926\u0947\u0916\u0940 \u0915\u0930\u0924\u093e \u0939\u0948. \u0915\u094d\u092f\u094b\u0902?  \u0938\u092e\u091d\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092a\u0922\u093c\u0947\u0902  @HarshVardhanTri \u0915\u093e \u0932\u0947\u0916 \n\n@narendramodi @TwitterResearch @jack @rsprasad <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@ASHISHP17051965<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1284454873174433792_1359816994472620038\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @SitaramYechury: This case of computer hacking to plant incriminating mails is a deadly technological weapon which the Modi govt has used in the Bhima Koregaon case and may use in future against political opponents. \nPegasus &amp; Israeli connection must also be investigated. \n <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@iMahtaw<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1211324120576614402_1359828316316782596\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">\u0bae\u0bbe\u0b9a\u0ba4\u0bcd\u0ba4\u0bc1\u0b95\u0bcd\u0b95\u0bc1 \u0b92\u0bb0\u0bc1 \u0ba8\u0bbe\u0bb3\u0bbe\u0b9a\u0bcd\u0b9a\u0bc1 \u0bb5\u0ba8\u0bcd\u0ba4\u0bc1\u0b9f\u0bcd\u0b9f\u0bc1 \u0baa\u0bcb\u0b99\u0bcd\u0b95 \u0bae\u0bcb\u0b9f\u0bbf \u0b85\u0baf\u0bcd\u0baf\u0bbe. \u0b8e\u0b99\u0bcd\u0b95\u0bb3\u0bc1\u0b95\u0bcd\u0b95\u0bc1 entertainment \u0bb5\u0bc7\u0ba3\u0bc1\u0bae\u0bbe \u0b87\u0bb2\u0bcd\u0bb2\u0baf\u0bbe? \n\n#Modi #Modi_Chennaivisit <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@kichu_memes<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1345087307313893376_1359811059561820160\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @SyedZak34667747: Is there any Vaccine for Modi's Lie?\n#LIEvaccine <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@PolitiqueBlaze<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_588307816_1359825479440756749\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @ramprasad_c: Modi hai to mumkin hai. <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@colablizzard<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1332942414449786880_1359689223033348096\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @ninabhullar1: We Watch We Listen We Wait We Have Patience Modi Patience #BJPGovtDictatingTwitter\n#FarmersProtest @jazzyb <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@aflooshar<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1336339859003174920_1359773881024667650\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @SouravDindaBJP: The Modi government is running 115 schemes to help the poor and needy. Mamata didi is stopping these schemes,blockade. \n\nThe Modi govt is working to serve the poor and needy, Mamata di is only working towards making her nephew the next CM.\n#PoribortonYatra <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@16_bjp<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_106746583_1359670019366424578\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @suhasinih: Modi-Trudeau call : MEA readout focuses on Trudeau \"requirement\" for vaccines, Canadian PMO says they discussed \"access\" to vaccines. Canadian readout says Trudeau mentioned farmers protests, resolving issues through dialogue, MEA skips the mention. <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@archimags<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1323804371059052546_1359825479440756749\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @ramprasad_c: Modi hai to mumkin hai. <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@TRUMP88970847<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1357635434105298944_1359828181776097280\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">Welcome to 'Light' with lamps\nPM Sri Narendra Modi to participate in 'Assam Mala' tomorrow in Dhekiajuli, Sonitpur district of Assam..\n#AssamWelcomesModi <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@RajeshTvn<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_1345237056994168833_1359692089810821120\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @iofficialraj: According to twitter audit.com &amp; Twiplomacy, Modi is a global leader in fake twitter followers .. 60% (41million) of his followers are fake.  \n\n#BJPGovtDictatingTwitter <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@Sandip45840295<\/div>\r\n<\/div>\r\n<\/div>\r\n","<div class=\"twitpic\">\r\n<div class=\"mainpic\"><img src=\"twitter_photo_891347239422971904_1359601382907551744\"  \/><\/div>\r\n\r\n<div class=\"main-tweet \">RT @PratikS34353278: Modi ji to Congress members and @RahulGandhi ( Pappu)\n In parliament.\n#\u092a\u092a\u094d\u092a\u0942_\u0938\u0902\u0938\u0926_\u0938\u0947_\u092d\u093e\u0917\u093e <\/div>\r\n\r\n<div class=\"footer\">\r\n<div class=\"col-xs-2 center-block\"><img class=\"center-block img-responsive\" src=\"twitter_white.png\" \/><\/div>\r\n\r\n<div class=\"col-xs-10 user\">@AjayPat63859091<\/div>\r\n<\/div>\r\n<\/div>\r\n"];   $(document).ready(function() {        $("body").xiboLayoutScaler(options); $("#content").xiboTextRender(options, items); $("img").xiboImageRender(options);   }); </script>
+</html>
+<!-- NUMITEMS=3 -->
+<!-- DURATION=60 -->

@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[[ViewPortWidth]]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    
+            <link href="bootstrap.min.css" rel="stylesheet" media="screen">
+            <link href="weather-icons.min.css" rel="stylesheet" media="screen">
+            <link href="font-awesome.min.css" rel="stylesheet" media="screen">
+            <link href="animate.css" rel="stylesheet" media="screen">
+            <style type="text/css"> body { background-color: transparent }</style>
+            <style type="text/css">
+                #content { 
+  height: inherit; 
+}
+
+.shadowed {
+text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    filter: dropshadow(color=rgba(0, 0, 0, 0.4), offx=2, offy=2);
+}
+
+.bg-div {
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    width: 1920px !important;
+    height: 1080px !important;
+}
+
+.bg-cloudy {
+  background-image: url('wi-cloudy.jpg');
+}
+
+.bg-partly-cloudy-day {
+  background-image: url('wi-day-cloudy.jpg');
+}
+
+.bg-clear-day {
+  background-image: url('wi-day-sunny.jpg');
+}
+
+.bg-fog {
+  background-image: url('wi-fog.jpg');
+}
+
+.bg-sleet {
+  background-image: url('wi-hail.jpg');
+}
+
+.bg-clear-night {
+  background-image: url('wi-night-clear.jpg');
+}
+
+.bg-partly-cloudy-night {
+  background-image: url('wi-night-partly-cloudy.jpg');
+}
+
+.bg-rain {
+  background-image: url('wi-rain.jpg');
+}
+
+.bg-snow {
+  background-image: url('wi-snow.jpg');
+}
+
+.bg-wind {
+  background-image: url('wi-windy.jpg');
+}
+.bg-footer {
+    position: relative;
+    right: 0;
+    top: 106px;
+    left: 0;
+    text-align: center;
+    background-color: #000;
+    opacity: 0.9;
+    padding: 30px 0 0 0;
+}
+
+.date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    color: #fff;
+    font-weight: 900;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+
+.temp {
+    font-family: 'Roboto', sans-serif;
+    font-size: 260px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.city {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    margin-left: 40px;
+}
+
+.day-details {
+    font-size: 40px;
+    font-weight: 200;
+    color: #fff;
+    font-style: italic;
+}
+
+.temp-details {
+    font-size: 35px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.forecast-current {
+    font-weight: 900;
+    color: #fff;
+    font-size: 60px;
+}
+
+.forecast-second {
+    margin-top: 10px;
+    font-weight: 200;
+    color: #fff;
+    font-size: 40px;
+}
+
+.main-icon {
+    color: #fff;
+    font-size: 180px;
+}
+
+.second-icon {
+    color: #fff;
+    font-size: 60px;
+    padding: 25px 0px;
+}
+
+.powered {
+    padding: 15px 0;
+    color: #000;
+    font-size: 24px;
+    background-color: white;
+}
+            </style>
+        <link href="fonts.css" rel="stylesheet" media="screen"><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"><div class="bg-div bg-cloudy container-fluid">
+    <div class="row">
+        <div class="col-xs-6">
+            <h1 class="date shadowed"> May <br>11</h1>
+        </div>
+        <div class="col-xs-5">
+            <div class="row text-right temp shadowed">35ºC</div>
+            <div class="row pull-right animated rotateInUpRight main-icon shadowed"><i class="wi wi-cloudy"></i></div>
+        </div>
+    </div>
+    <div class="bg-footer row bottom-bar">
+        <div class="col-xs-4 text-center">
+            <div class="row forecast-current">Scattered clouds</div>
+            <div class="row forecast-second">Wind: SE 5.66 MPS</div>
+            <div class="row forecast-second">Humidity: 46%</div>
+        </div>
+        <div class="upcoming">
+            <div class="day col-xs-2">
+    <div class="row text-center day-details">Wed</div>
+    <div class="row animated Bounce second-icon"><i class="wi wi-day-cloudy"></i></div>
+    <div class="row text-center temp-details">34 º C </div>
+</div><div class="day col-xs-2">
+    <div class="row text-center day-details">Thu</div>
+    <div class="row animated Bounce second-icon"><i class="wi wi-day-cloudy"></i></div>
+    <div class="row text-center temp-details">34 º C </div>
+</div><div class="day col-xs-2">
+    <div class="row text-center day-details">Fri</div>
+    <div class="row animated Bounce second-icon"><i class="wi wi-day-cloudy"></i></div>
+    <div class="row text-center temp-details">34 º C </div>
+</div><div class="day col-xs-2">
+    <div class="row text-center day-details">Sat</div>
+    <div class="row animated Bounce second-icon"><i class="wi wi-rain"></i></div>
+    <div class="row text-center temp-details">33 º C </div>
+</div>
+        </div>
+        <div class="col-xs-12 powered">Powered by OpenWeather</div>
+    </div>
+</div></div>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script><script type="text/javascript" src="xibo-layout-scaler.js"></script><script type="text/javascript" src="xibo-image-render.js"></script><script>
+
+            var options = {"originalWidth":"1920","originalHeight":"1080","widgetDesignWidth":"1920","widgetDesignHeight":"1080"}
+
+            $(document).ready(function() {
+                $("body").xiboLayoutScaler(options);
+                $("#content").find("img").xiboImageRender(options);
+            });
+        </script>
+</html>
+

@@ -1,0 +1,97 @@
+# htaccess file for CMS instances running in /
+# if you are running using an alias or from a sub-folder, please refer to the file in docker/tmp
+# if you previously set a RewriteBase in here, the file in docker/tmp replaces that approach
+RewriteEngine On
+
+# Disable directory indexing
+Options -Indexes
+
+# fix authorization header
+RewriteCond %{HTTP:Authorization} .+
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# requests for api authorize
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} ^.*/api/authorize/.*$
+RewriteRule ^ api/authorize/index.php [QSA,L]
+
+# requests that start with api go down to api/index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} ^.*/api/.*$
+RewriteRule ^ api/index.php [QSA,L]
+
+# install
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} ^.*/install/.*$
+RewriteRule ^ install/index.php [QSA,L]
+
+# maintenance
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} ^/maint/.*$
+RewriteRule ^ maint/index.php [QSA,L]
+
+# all others - i.e. web
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !\.(css|js|png|jpg)$
+RewriteCond %{REQUEST_URI} !^/dist/.*$
+RewriteCond %{REQUEST_URI} !^/theme/.*$
+RewriteRule ^ index.php [QSA,L]
+
+
+php_value memory_limit -1
+ 
+php_value upload_max_filesize 540M
+php_value post_max_size 540M
+php_value max_execution_time -1
+php_value max_input_time 5000
+php_value session.gc_maxlifetime 2000
+
+# Host Header Injection 
+
+RewriteCond %{HTTP:X-Forwarded-Host} !^$
+RewriteCond %{HTTP:X-Forwarded-Host} !^
+RewriteRule ^ - [F]
+
+# Check if Host header is empty or doesn't match SERVER_NAME
+
+
+RewriteCond %{HTTPS} !=on
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+
+#RewriteCond %{HTTP_HOST} !^(www\.demods\.oasys\.co|demods\.oasys\.co)$ [NC]
+#RewriteRule ^ - [F]
+
+
+# Reject requests with invalid Host header
+#RewriteCond %{HTTP_HOST} !^demods\.oasys\.co$ [NC]
+#RewriteRule ^ - [R=403,L]
+
+# Reject requests with extra parameters and invalid Host header
+#RewriteCond %{HTTP_HOST} !^demods\.oasys\.co\$ [NC]
+#RewriteCond %{QUERY_STRING} .+
+#RewriteRule ^ - [R=403,L]
+
+
+# Sensitive Information Disclosure:
+
+<FilesMatch "\.(conf|ini|log)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Vulnerable HTTP Methods allowed
+
+
+# Disable Server Signature and Version Disclosure
+ServerSignature Off
+
+
+#Vulnerable HTTP Methods allowed
+
+#RewriteCond %{REQUEST_METHOD} ^TRACE
+#RewriteRule .* - [F,L]
+
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK|CONNECT)$
+RewriteRule .* - [F,L]

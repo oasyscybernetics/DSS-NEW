@@ -1,0 +1,41 @@
+{#
+/*
+ * Oasys Digital Signage
+ * 
+ * 
+ */
+#}
+
+{% extends "form-base.twig" %}
+{% import "forms.twig" as forms %}
+
+{% block formTitle %}
+    {% set name = media.name %}
+    {% trans %} Media {{ name }} {% endtrans %}
+{% endblock %}
+
+{% block formButtons %}
+    {% trans "Cancel" %}, XiboDialogClose()
+    {% trans "Save" %}, $("#mediaSetEnableStatForm").submit()
+{% endblock %}
+
+{% block formHtml %}
+    <div class="row">
+        <div class="col-md-12">
+            <form id="mediaSetEnableStatForm" class="XiboForm form-horizontal" method="put" action="{{ urlFor("library.setenablestat", {input: "enableStat", id: media.mediaId}) }}">
+                {% set title %}{% trans "Enable Stats Collection?" %}{% endset %}
+                {% set helpText %}{% trans "Enable the collection of Proof of Play statistics for this Media Item." %}{% endset %}
+
+                {% set offOption %}{% trans "Off" %}{% endset %}
+                {% set onOption %}{% trans "On" %}{% endset %}
+                {% set inheritOption %}{% trans "Inherit" %}{% endset %}
+                {% set options = [
+                    { id: "Off", value: offOption },
+                    { id: "On", value: onOption },
+                    { id: "Inherit", value: inheritOption }
+                ] %}
+                {{ forms.dropdown("enableStat", "single", title, media.enableStat, options, "id", "value", helpText) }}
+            </form>
+        </div>
+    </div>
+{% endblock %}

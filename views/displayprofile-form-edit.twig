@@ -1,0 +1,64 @@
+{#
+/*
+ * Oasys Digital Signage
+ * 
+ * 
+ */
+#}
+{% extends "form-base.twig" %}
+{% import "forms.twig" as forms %}
+
+{% block formTitle %}
+    {% trans "Edit Profile" %}
+{% endblock %}
+
+{% block formButtons %}
+    {% trans "Help" %}, XiboHelpRender("{{ help }}")
+    {% trans "Cancel" %}, XiboDialogClose()
+    {% trans "Save" %}, displayProfileEditFormSubmit()
+{% endblock %}
+
+{% block formFieldActions %}
+    [
+        {
+        "field": "statsEnabled", "trigger": "init",
+        "operation": "is:checked", "value": false,
+        "actions": { ".aggregation-level": { "display": "none" } }
+        },{
+        "field": "statsEnabled", "trigger": "change",
+        "operation": "is:checked", "value": false,
+        "actions": { ".aggregation-level": { "display": "none" } }
+        },
+        {
+        "field": "statsEnabled", "trigger": "init",
+        "operation": "is:checked", "value": true,
+        "actions": { ".aggregation-level": { "display": "block" } }
+        },{
+        "field": "statsEnabled", "trigger": "change",
+        "operation": "is:checked", "value": true,
+        "actions": { ".aggregation-level": { "display": "block" } }
+        }
+    ]
+{% endblock %}
+
+{% block callBack %}displayProfileFormOpen{% endblock %}
+
+{% block formHtml %}
+    {# Output the relevant form depending on the display profile player type #}
+    {% if displayProfile.getClientType() == "android" %}
+        {% include "displayprofile-form-edit-android.twig" %}
+    {% elseif displayProfile.getClientType() == "windows" %}
+        {% include "displayprofile-form-edit-windows.twig" %}
+    {% elseif displayProfile.getClientType() == "linux" %}
+        {% include "displayprofile-form-edit-linux.twig" %}
+    {% elseif displayProfile.getClientType() == "lg" or displayProfile.getClientType() == "sssp"  %}
+        {% include "displayprofile-form-edit-soc.twig" %}
+    {% else %}
+        {% set message %}{% trans "This is an unknown type of Player and there are no special settings for it." %}{% endset %}
+        {{ forms.message(message) }}
+
+        {% include "displayprofile-form-edit-common-fields.twig" %}
+    {% endif %}
+
+    {% include "displayprofile-form-edit-javascript.twig" %}
+{% endblock %}

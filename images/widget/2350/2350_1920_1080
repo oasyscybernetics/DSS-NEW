@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Xibo Open Source Digital Signage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=[[ViewPortWidth]]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Copyright 2006-2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+        }
+        h1, h2, h3, h4, p {
+            margin-top: 0;
+        }
+        #iframe {
+            border: 0;
+        }
+        .cycle-slide p, p.cycle-slide {
+            margin-bottom:0;
+        }
+    </style>
+    
+    <link href="fonts.css" rel="stylesheet" media="screen">
+        <link href="bootstrap.min.css" rel="stylesheet" media="screen"><style type="text/css"> body { background-color: transparent }</style><style type="text/css">body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1;
+}
+
+.container-main {
+    height: 420px !important;
+    width: 820px !important;
+}
+
+.container {
+    width: 820px !important;
+    height: 420px !important;
+    float: left;
+    margin-top: 20px;
+}
+
+.row-finance {
+    height: 40px;
+    background: #e0e0e0;
+    margin-bottom: 17px;
+    border-left: #264a88 10px solid;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#cycle-container {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.value {
+    font-size: 19px;
+    padding-top: 10px;
+    color: #000;
+    white-space: nowrap;
+}
+
+.down-arrow {
+    margin: 15px 0px 0px 20px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid red;
+}
+
+.up-arrow {
+    margin: 15px 0px 0px 20px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid green;
+}
+
+.right-arrow {
+    margin: 10px 0px 0px 25px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid gray;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.variant {
+    font-size: 20px;
+    padding-top: 17px;
+}
+
+.flags {
+    padding-top: 4px;
+}
+
+.value-up {
+    color: green;
+    font-weight: bold
+}
+
+.value-down {
+    color: red;
+    font-weight: bold
+}
+
+.value-equal {
+    color: gray;
+    font-weight: bold
+}
+
+.name-stock {
+    color: gray;
+}</style><style type="text/css"></style>
+</head>
+<!--[if lt IE 7 ]><body class="ie6"><![endif]-->
+<!--[if IE 7 ]><body class="ie7"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div id="content"></div>
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script><script type="text/javascript" src="jquery-cycle-2.1.6.min.js"></script><script type="text/javascript" src="xibo-layout-scaler.js"></script><script type="text/javascript" src="xibo-finance-render.js"></script><script type="text/javascript" src="xibo-image-render.js"></script><script type="text/javascript">   var options = {"type":"stocks","fx":"none","speed":500,"duration":30,"durationIsPerPage":false,"numItems":3,"originalWidth":"1920","originalHeight":"1080","widgetDesignWidth":"820","widgetDesignHeight":"420","maxItemsPerPage":7};   var items = ["<div class=\"row row-finance\">\r\n    <div class=\"col-xs-2 value name-stock  \">GOOGL<\/div>\r\n    <div class=\"col-xs-5 value \">GOOGL<\/div>\r\n    <div class=\"col-xs-2 text-right value\">2291.75 <\/div>\r\n    <div class=\"col-xs-2 text-right value value-down\">-1.56%<\/div>\r\n    <div class=\"col-xs-1 text-right\"><div class=\"down-arrow\"><\/div><\/div>\r\n<\/div>","<div class=\"row row-finance\">\r\n    <div class=\"col-xs-2 value name-stock  \">NVDA<\/div>\r\n    <div class=\"col-xs-5 value \">NVDA<\/div>\r\n    <div class=\"col-xs-2 text-right value\">570.63 <\/div>\r\n    <div class=\"col-xs-2 text-right value value-down\">-3.53%<\/div>\r\n    <div class=\"col-xs-1 text-right\"><div class=\"down-arrow\"><\/div><\/div>\r\n<\/div>","<div class=\"row row-finance\">\r\n    <div class=\"col-xs-2 value name-stock  \"><\/div>\r\n    <div class=\"col-xs-5 value \"><\/div>\r\n    <div class=\"col-xs-2 text-right value\"> <\/div>\r\n    <div class=\"col-xs-2 text-right value value-equal\">0%<\/div>\r\n    <div class=\"col-xs-1 text-right\"><div class=\"right-arrow\"><\/div><\/div>\r\n<\/div>"];   var body = "<div class=\"container-main\">\r\n    <div class=\"container \">\r\n        <div id=\"cycle-container\">\r\n            [itemsTemplate]\r\n        <\/div>\r\n    <\/div>\r\n<\/div>";   $(document).ready(function() {        $("body").xiboLayoutScaler(options); $("#content").xiboFinanceRender(options, items, body); $("#content").find("img").xiboImageRender(options);    }); </script>
+</html>
+<!-- NUMITEMS=1 -->
+<!-- DURATION=30 -->
